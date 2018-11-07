@@ -1,29 +1,39 @@
-# fastsecurity
+# FastSecurity [WIP]
 
-## Project setup
-```
-npm install
-```
+A landing page for a futuristic motorcycle.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This is a project by [YRGO](https://github.com/yrgo) students of Web Development, Digital Designer and Computer Graphics.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Installation
 
-### Run your tests
-```
-npm run test
-```
+1. Clone the repository `git clone https://github.com/laykith/FastSecurity`
+2. Install npm dependencies `npm install`
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Development
+Run development server `npm run serve` 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Production
+Run production server `npm run build`
+
+### Github pages
+Deploy to Github Pages:
+1. Edit basepath in `Vue.config.js`
+2. Push build to gh-pages branch `npm run deploy`
+
+## Collaborators
+
+* [André Broman](https://github.com/laykith) (WU)
+* [Mattias Rådemar](https://github.com/raademar) (WU)
+
+* Andreas Borstrand (DD)
+* Otto Bäckström (DD)
+
+* Filippa Godén (CG)
+* Jesper Andersson (CG)
+* Pernilla Blomqvist (CG)
+
+## Licence
+
+[MIT](LICENCE) © 2018 
+- [André Broman](https://github.com/laykith)
+- [Mattias Rådemar](https://github.com/raademar)
