@@ -47,7 +47,7 @@
     "hooks": {
       "pre-commit": "npm run lint",
       "post-checkout": "npm install",
-      "pre-push": "if git-branch-is develop; then npm run build; gh-pages -d dist; fi"
+      "pre-push": "if git-branch-is master; then npm run build; gh-pages -d dist; fi"
     }
   },
   "browserslist": [
