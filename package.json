@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy": "npm run build; gh-pages -d dist",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -47,7 +48,7 @@
     "hooks": {
       "pre-commit": "npm run lint",
       "post-checkout": "npm install",
-      "pre-push": "if git-branch-is master; then npm run build; gh-pages -d dist; fi"
+      "pre-push": "if git-branch-is master; then npm run deploy; fi"
     }
   },
   "browserslist": [
