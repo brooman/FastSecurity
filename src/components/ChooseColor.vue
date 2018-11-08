@@ -3,18 +3,20 @@
     <div class="container">
       <h2>Choose color</h2>
       <span class="color-line" />
-      <img 
-        src="../assets/images/choose-color-bike.png" 
-        alt=""
-      >
+      <transition>
+        <img
+          :src="image" 
+          alt=""
+        >
+      </transition>
       <h3>Why not drive <span class="highlight">your</span> personal color?</h3>
       <div class="colors">
-				<div 
-					v-for="(circle, index) in circles"
-					:key="index"
-					:class="['circle', circle.class, {'active': circle.picked}]"
-					@click="setActiveItemId(circle)"
-				/>
+        <div 
+          v-for="(circle, index) in circles"
+          :key="index"
+          :class="['circle', circle.class, {'active': selected == circle}]"
+          @click="selected = circle, selectedImage(circle)"
+        />
       </div>
     </div>
   </main>
@@ -22,22 +24,26 @@
 
 <script>
 export default {
+
 	name: 'ChooseColor',
 	data: function() {
 		return {
-				circles: [
-				{ class: 'white', picked: false },
-				{ class: 'black', picked: false },
-				{ class: 'cyan', picked: false },
-				{ class: 'saab', picked: false },
+			circles: [
+				{ class: 'white', image: '/assets/images/choose-color-bike.png'},
+				{ class: 'red', image: '/assets/images/red.png'},
+				{ class: 'black', },
+				{ class: 'saab', },
 			],
+			selected: '',
+			image: '/assets/images/choose-color-bike.png',
 		}
 	},
+	
 	methods: {
-		setActiveItemId: function(circle) {
-			circle.picked = !circle.picked
+		selectedImage: function(circle) {
+			this.image = circle.image
 		}
-	}
+	},
 }
 </script>
 
@@ -54,7 +60,7 @@ main {
 }
 
 .container {
-	display: flex;
+		display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
@@ -97,8 +103,8 @@ img {
 .black {
 	background: #000;
 }
-.cyan {
-	background: cyan;
+.red {
+	background: #DA2032;
 }
 .saab {
 	background: #00205A;
