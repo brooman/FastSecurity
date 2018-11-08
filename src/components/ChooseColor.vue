@@ -12,8 +12,8 @@
 				<div 
 					v-for="(circle, index) in circles"
 					:key="index"
-					:class="['circle', circle.class, {'active': picked}]"
-					@click="setActiveItemId()"
+					:class="['circle', circle.class, {'active': circle.picked}]"
+					@click="setActiveItemId(circle)"
 				/>
       </div>
     </div>
@@ -26,17 +26,16 @@ export default {
 	data: function() {
 		return {
 				circles: [
-				{ class: 'white' },
-				{ class: 'black' },
-				{ class: 'cyan' },
-				{ class: 'saab' },
+				{ class: 'white', picked: false },
+				{ class: 'black', picked: false },
+				{ class: 'cyan', picked: false },
+				{ class: 'saab', picked: false },
 			],
-			picked: false
 		}
 	},
 	methods: {
-		setActiveItemId: function() {
-			this.picked = !this.picked
+		setActiveItemId: function(circle) {
+			circle.picked = !circle.picked
 		}
 	}
 }
