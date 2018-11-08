@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Navbar />
+    <HeroImg />
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
+import HeroImg from './components/HeroImg.vue'
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    HeroImg
   }
 }
 </script>
