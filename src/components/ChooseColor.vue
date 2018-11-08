@@ -54,8 +54,6 @@ main {
 }
 
 .container {
-	height: 20%;
-	width: 80%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
