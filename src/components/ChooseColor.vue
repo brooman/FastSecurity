@@ -9,22 +9,12 @@
       >
       <h3>Why not drive <span class="highlight">your</span> personal color?</h3>
       <div class="colors">
-        <div 
-          class="circle white"
-          @click="$event.target.classList.toggle('active')"
-        />
-        <div 
-          class="circle black"
-          @click="$event.target.classList.toggle('active')"
-        />
-        <div 
-          class="circle cyan"
-          @click="$event.target.classList.toggle('active')"
-        />
-        <div 
-          class="circle saab"
-          @click="$event.target.classList.toggle('active')"
-        />
+				<div 
+					v-for="(circle, index) in circles"
+					:key="index"
+					:class="['circle', circle.class, {'active': picked}]"
+					@click="setActiveItemId()"
+				/>
       </div>
     </div>
   </main>
@@ -35,10 +25,21 @@ export default {
 	name: 'ChooseColor',
 	data: function() {
 		return {
-			
+				circles: [
+				{ class: 'white' },
+				{ class: 'black' },
+				{ class: 'cyan' },
+				{ class: 'saab' },
+			],
+			picked: false
 		}
 	},
-};
+	methods: {
+		setActiveItemId: function() {
+			this.picked = !this.picked
+		}
+	}
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
