@@ -1,25 +1,28 @@
 <template>
-	<holder-component>
-		<template slot="header">
-			<h1> {{ title }} </h1>
-			<div class="color-line"></div>
-		</template>
-		<template slot="image">
-			<img
-				:src="image" 
-				alt="Image of a cool thing"
-			>
-		</template>
-		<template slot="text">
-			<h2>{{ text }}</h2>
-		</template>
-	</holder-component>
-	</template>
+  <holder-component>
+    <template slot="header">
+      <h1> {{ title }} </h1>
+      <div class="color-line" />
+    </template>
+    <template slot="image">
+      <img
+        :src="image" 
+        alt="Image of a cool thing"
+      >
+    </template>
+    <template slot="text">
+      <h2>{{ text }}</h2>
+    </template>
+  </holder-component>
+</template>
 <script>
 import HolderComponent from './HolderComponent.vue'
 
 export default {
 	name: 'Exterior',
+	components: {
+		HolderComponent,
+	},
 	data: function() {
 		return {
 			title: 'Exterior',
@@ -27,9 +30,6 @@ export default {
 			text: 'The Bike brings exterior to a new level.'
 		}
 	},
-	components: {
-		HolderComponent,
-	}
 }
 </script>
 

@@ -9,7 +9,6 @@
 <script>
 import Navbar from './components/Navbar.vue'
 import HeroImg from './components/HeroImg.vue'
-import HolderComponent from './components/HolderComponent.vue'
 import Exterior from './components/Exterior.vue'
 
 export default {
@@ -18,7 +17,6 @@ export default {
     Navbar,
     HeroImg,
     Exterior,
-    HolderComponent,
   }
 }
 </script>

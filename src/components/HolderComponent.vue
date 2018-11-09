@@ -1,18 +1,17 @@
 <template>
   <main>
     <div class="container">
-			<header>
-    		<slot name="header">
-					<h1>{{ title }}</h1>
-				</slot>
-  		</header>
-			<slot name="image">
-			</slot>
-			<div class="text">
-				<slot name="text">
-					{{ text }}
-				</slot>
-			</div>
+      <header>
+        <slot name="header">
+          <h1> {{ title }} </h1>
+        </slot>
+      </header>
+      <slot name="image" />
+      <div class="text">
+        <slot name="text">
+          {{ text }}
+        </slot>
+      </div>
     </div>
   </main>
 </template>
@@ -20,15 +19,27 @@
 <script>
 export default {
 	name: 'HolderComponent',
+	props: {
+		title: {
+			type: String,
+			required: false,
+			default: 'default'
+		},
+		image: {
+			type: String,
+			required: false,
+			default: 'default'
+		},
+		text: {
+			type: String,
+			required: false,
+			default: 'default'
+		}
+	},
 	data: function() {
 		return {
 		}
 	},
-	props: [
-		'title',
-		'image',
-		'text'
-	]
 }
 </script>
 
