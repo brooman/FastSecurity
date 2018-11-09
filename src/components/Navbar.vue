@@ -5,7 +5,8 @@
     aria-label="main navigation"
   >
     <div class="navbar-start">
-      <!--<img src="../assets/images/logo.svg">-->
+      <img src="../assets/images/saab.png">
+      <img src="../assets/images/logo.svg">
     </div>
     <div class="navbar-end">
       <div class="navbar-item">
@@ -29,6 +30,9 @@ export default {
 </script>
 
 <style>
+  img {
+   width: 100px;
+  }
   .navbar {
     display: flex;
     position: fixed !important;

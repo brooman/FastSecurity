@@ -22,7 +22,7 @@ export default {
 <style>
 .hero {
   height: 100vh;
-  background: url('/assets/images/future.jpeg');
+  background: url('../assets/images/future.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -31,7 +31,7 @@ export default {
 .display-1{
   color: #fff;
   font-size: 5rem;
-   text-shadow: 1rem 1rem 5rem #000; 
+  text-shadow: 1rem 1rem 5rem #000; 
 }
 .display-2{
   color: #fff;
