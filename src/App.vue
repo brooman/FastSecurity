@@ -2,18 +2,23 @@
   <div id="app">
     <Navbar />
     <HeroImg />
+    <Exterior />
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
 import HeroImg from './components/HeroImg.vue'
+import HolderComponent from './components/HolderComponent.vue'
+import Exterior from './components/Exterior.vue'
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    HeroImg
+    HeroImg,
+    Exterior,
+    HolderComponent,
   }
 }
 </script>
@@ -21,24 +26,24 @@ export default {
 <style>
 @font-face {
     font-family: "AG-Regular";
-    src: url(assets/fonts/AktivGrotesk-Regular.otf)
+    src: url(/assets/fonts/AktivGrotesk-Regular.otf)
 }
 @font-face {
     font-family: "AG-Light";
-    src: url(assets/fonts/AktivGrotesk-Light.otf)
+    src: url(/assets/fonts/AktivGrotesk-Light.otf)
 }
 @font-face {
     font-family: "AG-Bold";
-    src: url(assets/fonts/AktivGrotesk-Bold.otf)
+    src: url(/assets/fonts/AktivGrotesk-Bold.otf)
 }
 @font-face {
     font-family: "AG-Medium";
-    src: url(assets/fonts/AktivGrotesk-Medium.otf)
+    src: url(/assets/fonts/AktivGrotesk-Medium.otf)
 }
 
 * {
   font-family: 'AG-Medium';
-  color: oldlace;
+  color: #fff;
 }
 
 body {
