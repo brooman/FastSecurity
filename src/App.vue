@@ -2,21 +2,18 @@
   <div id="app">
     <Navbar />
     <HeroImg />
-    <Exterior />
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
 import HeroImg from './components/HeroImg.vue'
-import Exterior from './components/Exterior.vue'
 
 export default {
   name: 'App',
   components: {
     Navbar,
     HeroImg,
-    Exterior,
   }
 }
 </script>
