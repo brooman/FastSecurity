@@ -45,7 +45,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
+      "pre-commit": "npm run lint --fix",
       "post-checkout": "npm install",
       "pre-push": "if git-branch-is master; then npm run deploy; fi"
     }
