@@ -2,18 +2,21 @@
   <div id="app">
     <Navbar />
     <HeroImg />
+    <Exterior />
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
 import HeroImg from './components/HeroImg.vue'
+import Exterior from './components/Exterior.vue'
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    HeroImg
+    HeroImg,
+    Exterior,
   }
 }
 </script>
@@ -21,6 +24,7 @@ export default {
 <style>
 @font-face {
     font-family: "AG-Regular";
+
     src: url(./assets/fonts/AktivGrotesk-Regular.otf)
 }
 @font-face {
@@ -38,7 +42,7 @@ export default {
 
 * {
   font-family: 'AG-Medium';
-  color: oldlace;
+  color: #fff;
 }
 
 body {
