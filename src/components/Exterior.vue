@@ -26,7 +26,7 @@ export default {
 	data: function() {
 		return {
 			title: 'Exterior',
-			image: '/assets/images/exterior.png',
+			image: 'images/exterior.png',
 			text: 'The Bike brings exterior to a new level.'
 		}
 	},
