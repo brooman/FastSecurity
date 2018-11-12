@@ -3,7 +3,7 @@
     <div class="container">
       <h2>Choose color</h2>
       <span class="color-line" />
-      <transition name="slide-fade">
+      <transition name="slide-fade" mode="out-in">
         <img
           :src="image"
 					:key="image"
@@ -61,7 +61,7 @@ main {
 }
 
 .container {
-		display: flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
@@ -72,7 +72,7 @@ h2 {
 }
 img {
 	width: 80%;
-	max-height: 100px;
+	max-height: 150px;
 	transform:rotateY(180deg);
 }
 
@@ -80,12 +80,11 @@ img {
   transition: all .3s ease;
 }
 .slide-fade-leave-active {
-  transition: all .8s cubic-bezier(2.0, 3.5, 0.1, 1.0);
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translate(10px);
-  opacity: 0;
+	opacity: 0;
 }
 
 .color-line::after {
