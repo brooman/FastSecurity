@@ -34,7 +34,10 @@
       "eslint:recommended"
     ],
     "rules": {
-      "indent": [2, "tab"]
+      "indent": [
+        2,
+        "tab"
+      ]
     },
     "parserOptions": {
       "parser": "babel-eslint"
