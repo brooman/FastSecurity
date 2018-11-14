@@ -4,7 +4,7 @@
     <HeroImg />
     <HeroText />
     <HeroImg2 />
-    <ChooseColor />
+    <Swiper /> 
   </div>
 </template>
 
@@ -13,7 +13,7 @@ import Navbar from './components/Navbar.vue'
 import HeroImg from './components/HeroImg.vue'
 import HeroImg2 from './components/HeroImg2.vue'
 import HeroText from './components/HeroText.vue'
-import ChooseColor from './components/ChooseColor.vue'
+import Swiper from './components/Swiper.vue'
 
 export default {
 	name: 'App',
@@ -22,7 +22,7 @@ export default {
 		HeroImg,
 		HeroImg2,
 		HeroText,
-		ChooseColor,
+		Swiper,
 	}
 }
 </script>

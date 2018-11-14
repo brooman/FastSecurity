@@ -1,0 +1,60 @@
+<!-- The ref attr used to find the swiper instance -->
+<template>
+  <swiper 
+    ref="mySwiper" 
+    :options="swiperOption" 
+    class="slideshow"
+  >
+    <!-- slides -->
+    <swiper-slide class="slide"> <ChooseColor /> </swiper-slide>
+    <swiper-slide class="slide">I'm Slide 2</swiper-slide>
+    <swiper-slide class="slide">I'm Slide 3</swiper-slide>
+    <swiper-slide class="slide">I'm Slide 4</swiper-slide>
+    <swiper-slide class="slide">I'm Slide 5</swiper-slide>
+    <swiper-slide class="slide">I'm Slide 6</swiper-slide>
+    <swiper-slide class="slide">I'm Slide 7</swiper-slide>
+    <!-- Optional controls -->
+    <div 
+      slot="pagination" 
+      class="swiper-pagination"
+    />
+  </swiper>
+</template>
+ 
+<script>
+import ChooseColor from './ChooseColor.vue'
+export default {
+	name: 'Carrousel',
+	components: {
+		ChooseColor,
+	},
+	data() {
+		return {
+			swiperOption: {
+				pagination: {
+					el: '.swiper-pagination'
+				},
+			}
+		}
+	},
+	computed: {
+		swiper() {
+			return this.$refs.mySwiper.swiper
+		}
+	},
+	mounted() {
+		this.swiper.slideTo(3, 1000, false)
+	},
+}
+</script>
+
+
+<style scoped>
+    .slideshow {
+        height: 100vh;
+    }
+    .slide {
+        background-color: #414141;
+        color: #000;
+    }
+</style>
