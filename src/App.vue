@@ -3,7 +3,7 @@
     <Navbar />
     <HeroImg />
     <HeroText />
-    <Exterior />
+    <HeroImg2 />
     <ChooseColor />
   </div>
 </template>
@@ -11,8 +11,8 @@
 <script>
 import Navbar from './components/Navbar.vue'
 import HeroImg from './components/HeroImg.vue'
+import HeroImg2 from './components/HeroImg2.vue'
 import HeroText from './components/HeroText.vue'
-import Exterior from './components/Exterior.vue'
 import ChooseColor from './components/ChooseColor.vue'
 
 export default {
@@ -20,8 +20,8 @@ export default {
 	components: {
 		Navbar,
 		HeroImg,
+		HeroImg2,
 		HeroText,
-		Exterior,
 		ChooseColor,
 	}
 }
