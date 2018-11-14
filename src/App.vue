@@ -14,13 +14,13 @@ import Exterior from './components/Exterior.vue'
 import ChooseColor from './components/ChooseColor.vue'
 
 export default {
-  name: 'App',
-  components: {
-    Navbar,
-    HeroImg,
-    Exterior,
-    ChooseColor,
-  }
+	name: 'App',
+	components: {
+		Navbar,
+		HeroImg,
+		Exterior,
+		ChooseColor,
+	}
 }
 </script>
 

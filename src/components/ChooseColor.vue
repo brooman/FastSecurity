@@ -3,10 +3,13 @@
     <div class="container">
       <h2>Choose color</h2>
       <span class="color-line" />
-      <transition name="slide-fade" mode="out-in">
+      <transition 
+        name="slide-fade" 
+        mode="out-in"
+      >
         <img
+          :key="image"
           :src="image"
-					:key="image"
           alt=""
         >
       </transition>
