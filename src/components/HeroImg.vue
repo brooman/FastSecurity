@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .hero {
   height: 100vh;
   background: url('../assets/images/future.jpeg');
