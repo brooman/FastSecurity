@@ -3,6 +3,7 @@
     <Navbar />
     <HeroImg />
     <Exterior />
+    <ChooseColor />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Navbar from './components/Navbar.vue'
 import HeroImg from './components/HeroImg.vue'
 import Exterior from './components/Exterior.vue'
+import ChooseColor from './components/ChooseColor.vue'
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     Navbar,
     HeroImg,
     Exterior,
+    ChooseColor,
   }
 }
 </script>

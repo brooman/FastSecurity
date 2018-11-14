@@ -36,7 +36,7 @@ export default {
 .display-2{
   color: #fff;
   font-size: 3rem;
-   text-shadow: 1rem 1rem 5rem #000; 
+  text-shadow: 1rem 1rem 5rem #000;
 }
 .hero-body {
   display: flex;
