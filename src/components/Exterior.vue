@@ -1,12 +1,12 @@
 <template>
   <main>
     <div class="container">
-			<div class="text-container">
-				<h2>Exterior</h2>
-				<h4>FastSecurity 1.0 brings exterior to a new level.</h4>
-				<span class="color-line" />
-				<p>We've worked hard on every detail to make you feel special.</p>
-			</div>
+      <div class="text-container">
+        <h2>Exterior</h2>
+        <h4>FastSecurity 1.0 brings exterior to a new level.</h4>
+        <span class="color-line" />
+        <p>We've worked hard on every detail to make you feel special.</p>
+      </div>
     </div>
   </main>
 </template>
