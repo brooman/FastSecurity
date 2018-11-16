@@ -7,7 +7,7 @@
   >
     <!-- slides -->
     <swiper-slide class="slide"> <ChooseColor /> </swiper-slide>
-    <swiper-slide class="slide">I'm Slide 2</swiper-slide>
+    <swiper-slide class="slide"> <Exterior /> </swiper-slide>
     <!-- Optional controls -->
     <div 
       slot="pagination" 
@@ -18,10 +18,12 @@
  
 <script>
 import ChooseColor from './ChooseColor.vue'
+import Exterior from './Exterior.vue'
 export default {
 	name: 'Carrousel',
 	components: {
 		ChooseColor,
+		Exterior,
 	},
 	data() {
 		return {
