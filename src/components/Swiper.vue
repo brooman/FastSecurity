@@ -7,7 +7,7 @@
   >
     <!-- slides -->
     <swiper-slide class="slide"> <ChooseColor /> </swiper-slide>
-    <swiper-slide class="slide">I'm Slide 2</swiper-slide>
+    <swiper-slide class="slide"> <Interior /> </swiper-slide>
     <!-- Optional controls -->
     <div 
       slot="pagination" 
@@ -18,10 +18,12 @@
  
 <script>
 import ChooseColor from './ChooseColor.vue'
+import Interior from './Interior.vue'
 export default {
 	name: 'Carrousel',
 	components: {
 		ChooseColor,
+		Interior,
 	},
 	data() {
 		return {
