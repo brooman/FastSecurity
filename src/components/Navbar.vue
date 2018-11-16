@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   img {
    width: 100px;
    max-height: 100px;

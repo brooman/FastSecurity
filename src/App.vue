@@ -5,6 +5,7 @@
     <HeroText />
     <HeroImg2 />
     <Swiper /> 
+    <Merch /> 
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import HeroImg from './components/HeroImg.vue'
 import HeroImg2 from './components/HeroImg2.vue'
 import HeroText from './components/HeroText.vue'
 import Swiper from './components/Swiper.vue'
+import Merch from './components/Merch.vue'
 
 export default {
 	name: 'App',
@@ -23,6 +25,7 @@ export default {
 		HeroImg2,
 		HeroText,
 		Swiper,
+		Merch,
 	}
 }
 </script>
@@ -61,7 +64,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  height: 4000px; /* Temporary for seeing scrolling */ 
   overflow: hidden;
 }
 
