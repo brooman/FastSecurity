@@ -40,7 +40,7 @@ main {
 	height: 100vh;
 	width: 100vw;
 	color: #fff;
-	padding-top: 20vh;
+	padding-top: 10vh;
 }
 
 .container {
