@@ -33,13 +33,13 @@ export default {
 	data: function() {
 		return {
 			circles: [
-				{ class: 'white', image: '/assets/images/choose-color-bike.png'},
+				{ class: 'white', image: '/assets/images/whiteorange.png'},
 				{ class: 'red', image: '/assets/images/red.png'},
-				{ class: 'black', },
-				{ class: 'saab', },
+				{ class: 'black', image: '/assets/images/blackred.png' },
+				{ class: 'saab', image: '/assets/images/blueorange.png' },
 			],
 			selected: '',
-			image: '/assets/images/choose-color-bike.png',
+			image: '/assets/images/whiteorange.png',
 		}
 	},
 	
