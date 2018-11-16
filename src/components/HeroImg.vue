@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="display-1">
-          You are special.
+          {{ setLang.title }}
         </h1>
         <h2 class="display-2">
           FastSecurity, FS.1.0
@@ -14,8 +14,15 @@
 </template>
 
 <script>
+import language from '../assets/lang.json'
 export default {
-
+	data: function() {
+		return {
+			setLang: {
+				title: language.en.titleh1
+			}
+		}
+	}
 }
 </script>
 

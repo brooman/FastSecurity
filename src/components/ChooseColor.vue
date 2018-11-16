@@ -2,9 +2,9 @@
   <main>
     <div class="container">
       <h2>Choose color</h2>
-			<h3>Why not drive <span class="highlight">your</span> personal color?</h3>
+      <h3>Why not drive <span class="highlight">your</span> personal color?</h3>
       <span class="color-line" />
-			<p>The bike come in four different colors.</p>
+      <p>The bike come in four different colors.</p>
       <transition 
         name="slide-fade" 
         mode="out-in"

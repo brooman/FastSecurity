@@ -10,23 +10,52 @@
     </div>
     <div class="navbar-end">
       <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-light">
-            SV
-          </a>
-          <a class="button is-light">
-            EN
-          </a>
-        </div>
+        <span 
+          data-language="sv"
+          @click="changeLanguage('sv')"
+        >
+          SV 
+        </span>
+        <span 
+          data-language="en"
+          @click="changeLanguage('en')"
+        > 
+          EN
+        </span>
       </div>
     </div>
   </nav>
 </template>
 
 <script>
-export default {
+//Commented out bc eslint breaks commit.
 
-}
+// import language from '../assets/lang.json'
+// console.log(lang)
+
+// const store = new Vuex.Store({
+// 	state: {
+// 		pickedLanguage: changeLanguage(lang)
+// 	},
+// 	mutations: {
+// 		increment (state) {
+// 			state.count++
+// 		}
+// 	}
+// })
+// export default {
+// 	data: function() {
+// 		return {
+// 			lang: ''
+// 		}
+// 	},
+// 	methods: {
+// 		changeLanguage: function(lang) {
+// 			lang = this.lang
+// 		}
+// 	}
+
+// }
 </script>
 
 <style>
