@@ -1,0 +1,34 @@
+{
+	"en": {
+		"titleh1": "You are special.",
+		"titleh2": "FastSecurity, FS.1.0",
+		"HeroText": "Many people still think Saab makes cars, and that is correct. We are on the go for the future. Saab is very much alive and well, as one of the world’s most innovative companies. And now we are proud to present our car for the future: FastSecurity, FS.",
+		"sub-hero-title-h1": "Customize your way.",
+		"sub-hero-title-h2": "Here are our features for the future.",
+		"exterior-title": "Exterior",
+		"exteriorh4": "FastSecurity 1.0 brings exterior to a new level.",
+		"exteriorp": "We've worked hard on every detail to make you feel special.",
+		"interior-title": "Interior",
+		"interiorh4": "FastSecurity 1.0 brings interior to a new level.",
+		"interiorp": "We've worked hard on every detail to make you feel special.",
+		"choosecolor-title": "Choose color",
+		"chosecolorh3": "Why not drive your personal color?",
+		"chosecolorp": "The bike come in four different colors."
+	},
+	"sv": {
+		"titleh1": "Detta är på Svenska!",
+		"titleh2": "FastSecurity, FS.1.0",
+		"HeroText": "Many people still think Saab makes cars, and that is correct. We are on the go for the future. Saab is very much alive and well, as one of the world’s most innovative companies. And now we are proud to present our car for the future: FastSecurity, FS.",
+		"sub-hero-titleh1": "Customize your way.",
+		"sub-hero-titleh2": "Here are our features for the future.",
+		"exterior-title": "Exterior",
+		"exterior-h4": "FastSecurity 1.0 brings exterior to a new level.",
+		"exterior-p": "We've worked hard on every detail to make you feel special.",
+		"interior-title": "Interior",
+		"interior-h4": "FastSecurity 1.0 brings interior to a new level.",
+		"interior-p": "We've worked hard on every detail to make you feel special.",
+		"choosecolor-title": "Choose color",
+		"chosecolor-h3": "Why not drive your personal color?",
+		"chosecolor-p": "The bike come in four different colors."
+	}
+}
