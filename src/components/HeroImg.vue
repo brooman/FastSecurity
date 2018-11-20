@@ -3,10 +3,10 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="display-1">
-          {{ setLang.title }}
+          {{ getLanguage.titleh1 }}
         </h1>
         <h2 class="display-2">
-          FastSecurity, FS.1.0
+          {{ getLanguage.titleh2 }}
         </h2>
       </div>
     </div>
@@ -14,15 +14,19 @@
 </template>
 
 <script>
-import language from '../assets/lang.json'
+import { mapGetters } from 'vuex'
 export default {
+	name: 'HeroImg',
 	data: function() {
 		return {
-			setLang: {
-				title: language.en.titleh1
-			}
+			
 		}
-	}
+	},
+	computed: {
+		...mapGetters([
+			'getLanguage'
+		]),
+	},
 }
 </script>
 

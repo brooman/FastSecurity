@@ -11,14 +11,12 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <span 
-          data-language="sv"
-          @click="changeLanguage('sv')"
+          @click="changeLanguage(sv)"
         >
           SV 
         </span>
         <span 
-          data-language="en"
-          @click="changeLanguage('en')"
+          @click="changeLanguage(en)"
         > 
           EN
         </span>
@@ -28,34 +26,26 @@
 </template>
 
 <script>
-//Commented out bc eslint breaks commit.
 
-// import language from '../assets/lang.json'
-// console.log(lang)
-
-// const store = new Vuex.Store({
-// 	state: {
-// 		pickedLanguage: changeLanguage(lang)
-// 	},
-// 	mutations: {
-// 		increment (state) {
-// 			state.count++
-// 		}
-// 	}
-// })
-// export default {
-// 	data: function() {
-// 		return {
-// 			lang: ''
-// 		}
-// 	},
-// 	methods: {
-// 		changeLanguage: function(lang) {
-// 			lang = this.lang
-// 		}
-// 	}
-
-// }
+import language from '../assets/lang.json'
+import { mapMutations } from 'vuex'
+export default {
+	data: function() {
+		return {
+			language: language,
+			sv: language.sv,
+			en: language.en
+		}
+	},
+	methods: {
+		...mapMutations([
+			'CHANGE_LANGUAGE'
+		]),
+		changeLanguage: function(pickedLanguage) {
+			this.CHANGE_LANGUAGE(pickedLanguage)
+		}
+	}
+}
 </script>
 
 <style>
