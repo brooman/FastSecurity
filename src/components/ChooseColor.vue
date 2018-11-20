@@ -2,7 +2,9 @@
   <main>
     <div class="container">
       <h2>Choose color</h2>
+			<h3>Why not drive <span class="highlight">your</span> personal color?</h3>
       <span class="color-line" />
+			<p>The bike come in four different colors.</p>
       <transition 
         name="slide-fade" 
         mode="out-in"
@@ -13,7 +15,6 @@
           alt=""
         >
       </transition>
-      <h3>Why not drive <span class="highlight">your</span> personal color?</h3>
       <div class="colors">
         <div 
           v-for="(circle, index) in circles"
@@ -33,13 +34,13 @@ export default {
 	data: function() {
 		return {
 			circles: [
-				{ class: 'white', image: '/assets/images/choose-color-bike.png'},
+				{ class: 'white', image: '/assets/images/whiteorange.png'},
 				{ class: 'red', image: '/assets/images/red.png'},
-				{ class: 'black', },
-				{ class: 'saab', },
+				{ class: 'black', image: '/assets/images/blackred.png' },
+				{ class: 'saab', image: '/assets/images/blueorange.png' },
 			],
 			selected: '',
-			image: '/assets/images/choose-color-bike.png',
+			image: '/assets/images/whiteorange.png',
 		}
 	},
 	
@@ -73,10 +74,15 @@ h2 {
 	font-size: 3rem;
 	margin-bottom: 20px;
 }
+h3 {
+	font-size: 1.3rem;
+	margin-bottom: 20px;
+}
 img {
 	width: 80%;
 	max-height: 150px;
 	transform:rotateY(180deg);
+	margin-bottom: 20px;
 }
 
 .slide-fade-enter-active {
