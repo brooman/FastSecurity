@@ -6,7 +6,7 @@
   >
     <div class="navbar-start">
       <!--<img src="../assets/images/saab.png">-->
-      <img src="../assets/images/logo.svg">
+      <img src="../img/logo.svg">
     </div>
     <div class="navbar-end">
       <div class="navbar-item">

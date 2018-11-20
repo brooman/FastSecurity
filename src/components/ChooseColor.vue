@@ -2,9 +2,9 @@
   <main>
     <div class="container">
       <h2>Choose color</h2>
-			<h3>Why not drive <span class="highlight">your</span> personal color?</h3>
+      <h3>Why not drive <span class="highlight">your</span> personal color?</h3>
       <span class="color-line" />
-			<p>The bike come in four different colors.</p>
+      <p>The bike come in four different colors.</p>
       <transition 
         name="slide-fade" 
         mode="out-in"
@@ -34,13 +34,13 @@ export default {
 	data: function() {
 		return {
 			circles: [
-				{ class: 'white', image: '/assets/images/whiteorange.png'},
-				{ class: 'red', image: '/assets/images/red.png'},
-				{ class: 'black', image: '/assets/images/blackred.png' },
-				{ class: 'saab', image: '/assets/images/blueorange.png' },
+				{ class: 'white', image: 'img/whiteorange.png'},
+				{ class: 'red', image: 'img/red.png'},
+				{ class: 'black', image: 'img/blackred.png' },
+				{ class: 'saab', image: 'img/blueorange.png' },
 			],
 			selected: '',
-			image: '/assets/images/whiteorange.png',
+			image: 'img/whiteorange.png',
 		}
 	},
 	

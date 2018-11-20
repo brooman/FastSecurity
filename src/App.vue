@@ -34,19 +34,19 @@ export default {
 @font-face {
     font-family: "AG-Regular";
 
-    src: url(./assets/fonts/AktivGrotesk-Regular.otf)
+    src: url(./fonts/AktivGrotesk-Regular.otf)
 }
 @font-face {
     font-family: "AG-Light";
-    src: url(./assets/fonts/AktivGrotesk-Light.otf)
+    src: url(./fonts/AktivGrotesk-Light.otf)
 }
 @font-face {
     font-family: "AG-Bold";
-    src: url(./assets/fonts/AktivGrotesk-Bold.otf)
+    src: url(./fonts/AktivGrotesk-Bold.otf)
 }
 @font-face {
     font-family: "AG-Medium";
-    src: url(./assets/fonts/AktivGrotesk-Medium.otf)
+    src: url(./fonts/AktivGrotesk-Medium.otf)
 }
 
 * {

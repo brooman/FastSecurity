@@ -22,7 +22,7 @@ export default {
 <style scoped>
 .hero {
   height: 100vh;
-  background: url('../assets/images/road.jpg');
+  background: url('../img/road.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;

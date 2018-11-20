@@ -22,7 +22,7 @@ export default {
 <style scoped>
 .hero {
   height: 100vh;
-  background: url('../assets/images/future.jpeg');
+  background: url('../img/future.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;

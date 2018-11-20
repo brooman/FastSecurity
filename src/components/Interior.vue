@@ -37,7 +37,7 @@ main {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	background: linear-gradient(black 40%, transparent), url('/assets/images/whiteorange.png');
+	background: linear-gradient(black 40%, transparent), url('../img/whiteorange.png');
 	background-position: bottom;
 	background-size:cover;
 	background-repeat: no-repeat;
