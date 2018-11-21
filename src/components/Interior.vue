@@ -76,6 +76,10 @@ img {
 	transform:rotateY(180deg);
 }
 
+p {
+	letter-spacing: 0.8px;
+}
+
 .color-line::after {
 	display: block;
 	content: '';

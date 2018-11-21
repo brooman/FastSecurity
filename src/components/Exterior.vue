@@ -66,6 +66,10 @@ h4 {
 	font-size: 1.5rem;
 	margin-bottom: 10px;
 }
+
+p {
+	letter-spacing: 0.8px;
+}
 img {
 	width: 80%;
 	max-height: 150px;

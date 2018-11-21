@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <div class="container">
-      <p class="lead has-text-centered is-size-4 is-size-3-tablet is-size-1-desktop">Many people still think Saab makes cars, and that is correct. We are on the go for the future. Saab is very much alive and well, as one of the world’s most innovative companies. And now we are proud to present our car for the future: FastSecurity, FS.</p>
+      <p class="lead has-text-centered is-size-5 is-size-3-tablet is-size-1-desktop">Many people still think Saab makes cars, and that is correct. We are on the go for the future. Saab is very much alive and well, as one of the world’s most innovative companies. And now we are proud to present our car for the future: FastSecurity, FS.</p>
       <a
         class="contact-link" 
         href="#"
@@ -31,7 +31,7 @@ export default {
         margin-left: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 

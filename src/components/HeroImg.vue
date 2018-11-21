@@ -42,6 +42,7 @@ export default {
 .display-1{
   color: #fff;
   font-size: 5rem;
+  line-height: 5rem;
   text-shadow: 1rem 1rem 5rem #000; 
 }
 .display-2{

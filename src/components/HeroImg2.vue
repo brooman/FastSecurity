@@ -31,7 +31,9 @@ export default {
 .display-1{
   color: #fff;
   font-size: 5rem;
+  line-height: 5rem;
   text-shadow: 1rem 1rem 5rem #000; 
+  margin-bottom: 5rem;
 }
 .display-2{
   color: #fff;
@@ -42,6 +44,19 @@ export default {
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+@media ( max-width: 600px) {
+  
+  .display-1{
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+  .display-2 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  }      
 }
 
 </style>
