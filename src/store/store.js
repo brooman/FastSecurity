@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex)
 
@@ -7,6 +8,7 @@ Vue.use(Vuex)
 // Vuex to manage state of our components
 import language from '../assets/lang.json'
 export default new Vuex.Store({
+	plugins: [createPersistedState()],
 	state: {
 		language: language.en
 	},
