@@ -50,7 +50,7 @@ export default {
   }
   .lead {
     font-family: 'AG-Light';
-    letter-spacing: 2px;
+    word-spacing: 1px;
     max-width: 280px;
     line-height: 29px;
     font-size: 18px;

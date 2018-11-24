@@ -51,7 +51,8 @@ export default {
 
 * {
   font-family: 'AG-Medium';
-  color: #fff;
+  color: #fff; 
+  box-sizing: border-box;
 }
 
 body {

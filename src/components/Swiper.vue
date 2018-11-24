@@ -14,6 +14,14 @@
       slot="pagination" 
       class="swiper-pagination"
     />
+    <div 
+      slot="button-prev" 
+      class="swiper-button-prev"
+    />
+    <div 
+      slot="button-next" 
+      class="swiper-button-next"
+    />
   </swiper>
 </template>
  
@@ -32,7 +40,12 @@ export default {
 		return {
 			swiperOption: {
 				pagination: {
-					el: '.swiper-pagination'
+					el: '.swiper-pagination',
+					type: 'fraction'
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
 				},
 			}
 		}
@@ -43,18 +56,17 @@ export default {
 		}
 	},
 	mounted() {
-		this.swiper.slideTo(3, 1000, false)
+		this.swiper.slideTo(0, 1000, false)
 	},
 }
 </script>
 
 
 <style scoped>
-    .slideshow {
-        height: 100vh;
-    }
-    .slide {
-        background-color: #414141;
-        color: #000;
-    }
+.slideshow {
+	height: 100vh;
+}
+.slide {
+	color: #000;
+}
 </style>

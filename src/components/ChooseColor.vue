@@ -1,10 +1,9 @@
 <template>
   <main>
     <div class="container">
-      <h2>Choose color</h2>
-      <h3>Why not drive <span class="highlight">your</span> personal color?</h3>
+      <h2> {{ getLanguage.chooseColorTitle }} </h2>
       <span class="color-line" />
-      <p>The bike come in four different colors.</p>
+      <h3> {{ getLanguage.choseColorH3 }} </h3>
       <transition 
         name="slide-fade" 
         mode="out-in"
@@ -28,22 +27,26 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-
 	name: 'ChooseColor',
 	data: function() {
 		return {
 			circles: [
-				{ class: 'white', image: 'img/whiteorange.png'},
-				{ class: 'red', image: 'img/red.png'},
-				{ class: 'black', image: 'img/blackred.png' },
-				{ class: 'saab', image: 'img/blueorange.png' },
+				{ class: 'white', image: 'img/whiteorange2.png'},
+				{ class: 'red', image: 'img/red2.png'},
+				{ class: 'black', image: 'img/blackred2.png' },
+				{ class: 'saab', image: 'img/blueorange2.png' },
 			],
 			selected: '',
-			image: 'img/whiteorange.png',
+			image: 'img/blackred2.png',
 		}
 	},
-	
+	computed: {
+		...mapGetters([
+			'getLanguage'
+		]),
+	},
 	methods: {
 		selectedImage: function(circle) {
 			this.image = circle.image
@@ -58,10 +61,8 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #181818;
 	height: 100vh;
 	width: 100vw;
-	color: #fff;
 }
 
 .container {
@@ -71,17 +72,22 @@ main {
 	align-items: center;
 }
 h2 {
-	font-size: 3rem;
+	font-size: 50px;
+	line-height: 57px;
 	margin-bottom: 20px;
+	font-family: 'AG-Bold';
 }
 h3 {
-	font-size: 1.3rem;
+	font-size: 18px;
+	line-height: 27px;
 	margin-bottom: 20px;
+	margin-left: 25vw;
+	margin-right: 20vw;
+	text-align: left;
+	font-family: 'AG-Light';
 }
 img {
-	width: 80%;
-	max-height: 150px;
-	transform:rotateY(180deg);
+	width: 100%;
 	margin-bottom: 20px;
 }
 
@@ -96,16 +102,8 @@ img {
 	opacity: 0;
 }
 
-.color-line::after {
-	display: block;
-	content: '';
-	height: 3px;
-	width: 50vw;
-	margin-bottom: 20px;
-	background: linear-gradient(to right, #00205A 0%, #00205A 50%, cyan 50%, cyan 100%);
-}
 .highlight {
-	color: cyan;
+	color: #00205A;
 }
 .colors {
 	display: flex;

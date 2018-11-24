@@ -5,8 +5,14 @@
     aria-label="main navigation"
   >
     <div class="navbar-start">
-      <img src="../img/saab.png" class="saab">
-      <img src="../img/logo_fs/logo_transparent_white.svg" class="fs">
+      <img 
+        src="../img/saab.png" 
+        class="saab"
+      >
+      <img 
+        src="../img/logo_fs/logo_transparent_white.svg" 
+        class="fs"
+      >
     </div>
     <div class="navbar-end">
       <div class="navbar-item">
