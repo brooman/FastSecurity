@@ -2,16 +2,16 @@
   <main>
     <div class="container">
       <div class="text-container">
-        <h2>Exterior</h2>
-        <h4>FastSecurity 1.0 brings exterior to a new level.</h4>
+        <h2> {{ getLanguage.exteriorTitle }} </h2>
         <span class="color-line" />
-        <p>We've worked hard on every detail to make you feel special.</p>
+        <p> {{ getLanguage.exteriorP }} </p>
       </div>
     </div>
   </main>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
 
 	name: 'Exterior',
@@ -19,6 +19,11 @@ export default {
 		return {
 			
 		}
+	},
+	computed: {
+		...mapGetters([
+			'getLanguage'
+		]),
 	},
 	
 	methods: {
@@ -33,7 +38,7 @@ main {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	background: linear-gradient(black 40%, transparent), url('../img/whiteorange.png');
+	background: linear-gradient(black 30%, transparent), url('../img/lightcycle_moving_cropped_2.png');
 	background-position: bottom;
 	background-size:cover;
 	background-repeat: no-repeat;
@@ -58,13 +63,17 @@ main {
 	text-align: left;
 }
 h2 {
-	font-size: 3rem;
+	font-size: 50px;
+	line-height: 57px;
 	margin-bottom: 20px;
-	align-self: flex-start;
+	font-family: 'AG-Bold';
 }
-h4 {
-	font-size: 1.5rem;
-	margin-bottom: 10px;
+p {
+	font-size: 18px;
+	line-height: 27px;
+	margin-bottom: 20px;
+	text-align: left;
+	font-family: 'AG-Light';
 }
 img {
 	width: 80%;
@@ -72,14 +81,6 @@ img {
 	transform:rotateY(180deg);
 }
 
-.color-line::after {
-	display: block;
-	content: '';
-	height: 3px;
-	width: 50vw;
-	margin-bottom: 20px;
-	background: linear-gradient(to right, #00205A 0%, #00205A 50%, cyan 50%, cyan 100%);
-}
 .highlight {
 	color: cyan;
 }

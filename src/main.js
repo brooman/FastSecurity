@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import Vuex from 'vuex'
 import App from './App.vue'
 import Buefy from 'buefy'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
@@ -7,6 +8,7 @@ import 'swiper/dist/css/swiper.css'
 import store from '@/store/store'
 
 Vue.config.productionTip = false
+Vue.use(Vuex)
 Vue.use(Buefy)
 Vue.use(VueAwesomeSwiper)
 

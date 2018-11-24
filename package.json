@@ -6,8 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "deploy": "npm run build; gh-pages -d dist",
-		"lint": "vue-cli-service lint",
-		"fuckyouESLINT": "vue-cli-service lint --fix"
+    "lint": "vue-cli-service lint",
+    "fuckyouESLINT": "vue-cli-service lint --fix"
   },
   "dependencies": {
     "buefy": "^0.7.0",
