@@ -130,6 +130,7 @@ img {
 	background: #00205A;
 }
 .active {
-	border: 2px solid orange;
+
+	transform: scale(1.6)
 }
 </style>
