@@ -3,10 +3,10 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="display-1">
-          You are special.
+          {{ getLanguage.titleh1 }}
         </h1>
         <h2 class="display-2">
-          FastSecurity, FS.1.0
+          {{ getLanguage.titleh2 }}
         </h2>
       </div>
     </div>
@@ -14,15 +14,26 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-
+	name: 'HeroImg',
+	data: function() {
+		return {
+			
+		}
+	},
+	computed: {
+		...mapGetters([
+			'getLanguage'
+		]),
+	},
 }
 </script>
 
 <style scoped>
 .hero {
   height: 100vh;
-  background: url('../assets/images/future.jpeg');
+  background: url('../img/future.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;

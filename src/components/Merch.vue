@@ -4,15 +4,15 @@
     <div class="merchbox">
       <div class="merchitem"><img 
         class="merchimg" 
-        src="../assets/images/watch_ph.jpg"
+        src="../img/watch_ph.jpg"
       ><h3 class="is-size-2">The <span class="highlight">Watch</span></h3><a href="#">Read more...</a></div>
       <div class="merchitem"><img 
         class="merchimg" 
-        src="../assets/images/watch_ph.jpg"
+        src="../img/watch_ph.jpg"
       ><h3 class="is-size-2">The <span class="highlight">Helmet</span></h3><a href="#">Read more...</a></div>
       <div class="merchitem"><img 
         class="merchimg" 
-        src="../assets/images/watch_ph.jpg"
+        src="../img/watch_ph.jpg"
       ><h3 class="is-size-2">The <span class="highlight">Sunnies</span></h3><a href="#">Read more...</a></div>
     </div>
   </div>

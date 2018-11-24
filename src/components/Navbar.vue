@@ -6,26 +6,45 @@
   >
     <div class="navbar-start">
       <!--<img src="../assets/images/saab.png">-->
-      <img src="../assets/images/logo.svg">
+      <img src="../img/logo.svg">
     </div>
     <div class="navbar-end">
       <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-light">
-            SV
-          </a>
-          <a class="button is-light">
-            EN
-          </a>
-        </div>
+        <span 
+          @click="changeLanguage(sv)"
+        >
+          SV 
+        </span>
+        <span 
+          @click="changeLanguage(en)"
+        > 
+          EN
+        </span>
       </div>
     </div>
   </nav>
 </template>
 
 <script>
-export default {
 
+import language from '../assets/lang.json'
+import { mapMutations } from 'vuex'
+export default {
+	data: function() {
+		return {
+			language: language,
+			sv: language.sv,
+			en: language.en
+		}
+	},
+	methods: {
+		...mapMutations([
+			'CHANGE_LANGUAGE'
+		]),
+		changeLanguage: function(pickedLanguage) {
+			this.CHANGE_LANGUAGE(pickedLanguage)
+		}
+	}
 }
 </script>
 
