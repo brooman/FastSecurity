@@ -72,14 +72,6 @@ img {
 	transform:rotateY(180deg);
 }
 
-.color-line::after {
-	display: block;
-	content: '';
-	height: 3px;
-	width: 50vw;
-	margin-bottom: 20px;
-	background: linear-gradient(to right, #00205A 0%, #00205A 50%, cyan 50%, cyan 100%);
-}
 .highlight {
 	color: cyan;
 }

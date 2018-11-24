@@ -5,20 +5,20 @@
     aria-label="main navigation"
   >
     <div class="navbar-start">
-      <!--<img src="../assets/images/saab.png">-->
-      <img src="../img/logo.svg">
+      <img src="../img/saab.png" class="saab">
+      <img src="../img/logo_fs/logo_transparent_white.svg" class="fs">
     </div>
     <div class="navbar-end">
       <div class="navbar-item">
         <span 
-          @click="changeLanguage(sv)"
-        >
-          SV 
-        </span>
-        <span 
           @click="changeLanguage(en)"
         > 
           EN
+        </span>
+        <span 
+          @click="changeLanguage(sv)"
+        >
+          SV 
         </span>
       </div>
     </div>
@@ -49,20 +49,23 @@ export default {
 </script>
 
 <style scoped>
-  img {
-   width: 100px;
-   max-height: 100px;
-  }
   .navbar {
     display: flex;
-    position: fixed !important;
+    position: absolute !important;
     justify-content: space-between;
     width: 100%;
     background-color: transparent !important;
   }
   .navbar-start {
-    max-width: 50%;
+    display:flex;
     padding-left: 20px;
+  }
+  .saab {
+    width: 50px;
+    max-height: 50px;
+  }
+  .fs {
+    align-self: flex-start;
   }
   .navbar-end {
     max-width: 50%;

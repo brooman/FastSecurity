@@ -57,7 +57,7 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background: #111;
+  background: #0E0E0E;
 }
 #app {
   font-family: 'AG-Bold', sans-serif;
@@ -71,5 +71,14 @@ body {
   height: 5px;
   width: 40%;
   background: linear-gradient(to right, cyan 0%, cyan 50%, blue 50%, blue 100%);
+}
+
+.color-line::after {
+	display: block;
+	content: '';
+	height: 3px;
+	width: 50vw;
+	margin-bottom: 20px;
+	background: linear-gradient(to right, #00205A 0%, #00205A 50%, #D51225 50%, #D51225 100%);
 }
 </style>
