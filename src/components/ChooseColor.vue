@@ -8,11 +8,12 @@
         name="slide-fade" 
         mode="out-in"
       >
-        <img
+        <progressive-img
           :key="image"
           :src="image"
+          class="bike-img"
           alt=""
-        >
+        />
       </transition>
       <div class="colors">
         <div 
@@ -86,8 +87,9 @@ h3 {
 	text-align: left;
 	font-family: 'AG-Light';
 }
-img {
+.bike-img {
 	width: 100%;
+	max-height: 500px;
 	margin-bottom: 20px;
 }
 
@@ -115,7 +117,8 @@ img {
 	height: 20px;
 	width: 20px;
 	border-radius: 50px;
-	margin-left: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 .white {
 	background: #fff;
