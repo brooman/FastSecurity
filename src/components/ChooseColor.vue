@@ -93,6 +93,10 @@ h3 {
 	margin-bottom: 20px;
 }
 
+p {
+	letter-spacing: 0.8px;
+}
+
 .slide-fade-enter-active {
   transition: all .3s ease;
 }

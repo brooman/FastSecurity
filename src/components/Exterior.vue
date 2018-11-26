@@ -75,6 +75,10 @@ p {
 	text-align: left;
 	font-family: 'AG-Light';
 }
+
+p {
+	letter-spacing: 0.8px;
+}
 img {
 	width: 80%;
 	max-height: 150px;
