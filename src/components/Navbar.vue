@@ -16,7 +16,8 @@
     </div>
     <div class="navbar-end">
       <div class="navbar-item">
-        <span 
+        <span
+          class="active"
           @click="changeLanguage(en)"
         > 
           EN
@@ -35,13 +36,19 @@
 
 import language from '../assets/lang.json'
 import { mapMutations } from 'vuex'
+import { mapGetters } from 'vuex'
 export default {
 	data: function() {
 		return {
 			language: language,
 			sv: language.sv,
-			en: language.en
+			en: language.en,
 		}
+	},
+	computed: {
+		...mapGetters([
+			'getLanguage'
+		]),
 	},
 	methods: {
 		...mapMutations([
@@ -76,5 +83,11 @@ export default {
   .navbar-end {
     max-width: 50%;
     padding-right: 20px;
+  }
+  .navbar-item {
+    font-family: 'AG-Light';
+  }
+  .active {
+    font-family: 'AG-Bold';
   }
 </style>

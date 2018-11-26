@@ -8,7 +8,7 @@
       ><h3 class="is-size-2">The <span class="highlight">Watch</span></h3><a href="#">Read more...</a></div>
       <div class="merchitem"><img 
         class="merchimg" 
-        src="../img/watch_ph.jpg"
+        src="../img/helmet.png"
       ><h3 class="is-size-2">The <span class="highlight">Helmet</span></h3><a href="#">Read more...</a></div>
       <div class="merchitem"><img 
         class="merchimg" 
@@ -43,7 +43,6 @@ export default {
   }
 
   .merchimg {
-    width: 256px;
     height: 256px;
     border-radius: 100%;
   }

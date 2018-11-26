@@ -5,9 +5,9 @@
         <h1 class="display-1">
           {{ getLanguage.subHeroTitleH1 }}
         </h1>
-        <h2 class="display-2">
+        <p class="lead">
           {{ getLanguage.subHeroTitleH2 }}
-        </h2>
+        </p>
       </div>
     </div>
   </section>
@@ -52,12 +52,20 @@ export default {
 
 /* DESKTOP */ 
 @media screen and (min-width: 768px){
+  .hero {
+    height: 100vh;
+    width: 100vw;
+    background: url('../img/lightcycle_moving.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(70%);
+  }
   .hero-body {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .container {
     margin-top: 0;
   }

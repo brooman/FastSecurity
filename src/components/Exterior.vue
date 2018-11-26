@@ -78,12 +78,10 @@ img {
 }
 
 @media screen and (min-width: 768px ){
-	main {
-		background: none;
-	}
+	main { background: none; }
 	.side {
 		display: block;
-		background: url('../img/lightcycle_moving_cropped_2.png');
+		background: url('../img/UI.jpg');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -91,7 +89,26 @@ img {
 		height: 100vh;
 	}
 	.content-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 0;
 		width: 50vw;
+	}
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		max-width: 50%;
+		height: 100vh;
+		text-align: left;
+	}
+	.lead {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
 	}
 }
 </style>

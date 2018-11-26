@@ -1,27 +1,31 @@
 <template>
   <main>
     <div class="container">
-      <h2 class="display-1"> {{ getLanguage.chooseColorTitle }} </h2>
-      <span class="color-line" />
-      <p class="lead"> {{ getLanguage.choseColorH3 }} </p>
-      <transition 
-        name="slide-fade" 
-        mode="out-in"
-      >
-        <progressive-img
-          :key="image"
-          :src="image"
-          class="bike-img"
-          alt=""
-        />
-      </transition>
-      <div class="colors">
-        <div 
-          v-for="(circle, index) in circles"
-          :key="index"
-          :class="['circle', circle.class, {'active': selected == circle}]"
-          @click="selected = circle, selectedImage(circle)"
-        />
+      <div class="text-box">
+        <h2 class="display-1"> {{ getLanguage.chooseColorTitle }} </h2>
+        <span class="color-line" />
+        <p class="lead"> {{ getLanguage.choseColorH3 }} </p>
+      </div>
+      <div class="image-box">
+        <transition 
+          name="slide-fade" 
+          mode="out-in"
+        >
+          <progressive-img
+            :key="image"
+            :src="image"
+            class="bike-img"
+            alt=""
+          />
+        </transition>
+        <div class="colors">
+          <div 
+            v-for="(circle, index) in circles"
+            :key="index"
+            :class="['circle', circle.class, {'active': selected == circle}]"
+            @click="selected = circle, selectedImage(circle)"
+          />
+        </div>
       </div>
     </div>
   </main>
@@ -59,18 +63,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 main {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	height: 100vh;
 	width: 100vw;
-}
-
-.container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
 }
 
 img, .bike-img {
@@ -128,7 +122,43 @@ img, .bike-img {
 	background: #00205A;
 }
 .active {
-
 	transform: scale(1.6)
+}
+
+
+@media screen and (min-width: 768px) {
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	max-width: 70%;
+}
+	img, .bike-img {
+		width: 80%;
+	}
+	.text-box {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		max-width: 35%;
+		text-align: left;
+	}
+	.image-box {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	.lead {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+	.colors {
+		display: flex;
+		width: 80%;
+		justify-content: center;
+}
 }
 </style>
