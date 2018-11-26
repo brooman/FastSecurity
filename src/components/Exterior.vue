@@ -36,6 +36,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 main {
+	background: linear-gradient(black 40%, transparent), url('../img/lightcycle_moving_cropped_2.png');
+	background-position: bottom;
+	background-size: 170%;
+	background-repeat: no-repeat;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -63,17 +67,6 @@ main {
 	max-width: 70%;
 }
 
-p {
-	font-size: 2rem;
-	line-height: 2.1rem;
-	margin-bottom: 20px;
-	text-align: center;
-	font-family: 'AG-Light';
-}
-
-p {
-	letter-spacing: 0.8px;
-}
 img {
 	width: 80%;
 	max-height: 150px;
@@ -85,6 +78,9 @@ img {
 }
 
 @media screen and (min-width: 768px ){
+	main {
+		background: none;
+	}
 	.side {
 		display: block;
 		background: url('../img/lightcycle_moving_cropped_2.png');
@@ -96,15 +92,6 @@ img {
 	}
 	.content-container {
 		width: 50vw;
-	}
-}
-
-@media screen and (max-width: 768px){
-	main {
-		background: linear-gradient(black 40%, transparent), url('../img/lightcycle_moving_cropped_2.png');
-		background-position: bottom;
-		background-size: 170%;
-		background-repeat: no-repeat;
 	}
 }
 </style>

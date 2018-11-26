@@ -42,6 +42,10 @@ main {
 	height: 100vh;
 	width: 100vw;
 	color: #fff;
+			background: linear-gradient(black 40%, transparent), url('../img/UI.jpg');
+		background-position: bottom;
+		background-size: 170%;
+		background-repeat: no-repeat;
 }
 
 .side {
@@ -67,19 +71,12 @@ img {
 	width: 100%;
 }
 
-p {
-	font-size: 2rem;
-	line-height: 2.1rem;
-	margin-bottom: 20px;
-	text-align: center;
-	font-family: 'AG-Light';
-}
-
 .highlight {
 	font-family: AG-Bold;
 }
 
 @media screen and (min-width: 768px ){
+	main { background: none; }
 	.side {
 		display: block;
 		background: url('../img/UI.jpg');
@@ -92,15 +89,6 @@ p {
 
 	.content-container {
 		width: 50vw;
-	}
-}
-
-@media screen and (max-width: 768px){
-	main {
-		background: linear-gradient(black 40%, transparent), url('../img/UI.jpg');
-		background-position: bottom;
-		background-size: 170%;
-		background-repeat: no-repeat;
 	}
 }
 </style>
