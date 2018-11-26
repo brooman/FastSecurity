@@ -12,7 +12,7 @@
       </div>
       <button
         class="contact-link" 
-        >KEEP ME INFORMED >
+      >KEEP ME INFORMED >
       </button>
     </div>
   </div>

@@ -27,8 +27,8 @@ export default {
 		HeroImg2,
 		HeroText,
 		Swiper,
-    Merch,
-    Footer,
+		Merch,
+		Footer,
 	}
 }
 </script>
