@@ -106,7 +106,7 @@ body {
 }
 
 /* 'TOUCH' */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
   .display-1 {
     font-size: 3rem;
     line-height: 3.1rem;

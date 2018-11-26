@@ -48,7 +48,7 @@ export default {
 }
 
 /* DESKTOP */ 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px){
   .hero-body {
     display: flex;
     justify-content: center;
