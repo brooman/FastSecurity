@@ -3,10 +3,10 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="display-1">
-          Customize your way.
+          {{ getLanguage.subHeroTitleH1 }}
         </h1>
         <h2 class="display-2">
-          Here are our features for the future.
+          {{ getLanguage.subHeroTitleH2 }}
         </h2>
       </div>
     </div>
@@ -14,49 +14,50 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-
+	name: 'HeroImg2',
+	data: function() {
+		return {
+			
+		}
+	},
+	computed: {
+		...mapGetters([
+			'getLanguage'
+		]),
+	},
 }
 </script>
 
 <style scoped>
 .hero {
   height: 100vh;
-  background: url('../assets/images/road.jpg');
+  width: 100vw;
+  background: url('../img/lightcycle_moving_cropped.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
   filter: saturate(70%);
-}
-.display-1{
-  color: #fff;
-  font-size: 5rem;
-  line-height: 5rem;
-  text-shadow: 1rem 1rem 5rem #000; 
-  margin-bottom: 5rem;
-}
-.display-2{
-  color: #fff;
-  font-size: 3rem;
-  text-shadow: 1rem 1rem 5rem #000;
 }
 .hero-body {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.container {
   text-align: center;
+  padding-bottom: 20vh;
 }
-
-@media ( max-width: 600px) {
-  
-  .display-1{
-  font-size: 4rem;
-  line-height: 4rem;
+.display-1{
+  color: #fff;
+  font-size: 56px;
+  line-height: 57px;
+  padding-bottom: 5vh;
+  font-family: 'AG-Bold';
 }
-
-  .display-2 {
-  font-size: 2rem;
-  line-height: 2.2rem;
-  }      
+.display-2{
+  color: #fff;
+  font-size: 18px;
+  font-family: 'AG-Light';
 }
-
 </style>

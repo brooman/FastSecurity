@@ -1,19 +1,19 @@
 <template>
   <main>
     <div class="container">
-      <h2>Choose color</h2>
-      <h3>Why not drive <span class="highlight">your</span> personal color?</h3>
+      <h2> {{ getLanguage.chooseColorTitle }} </h2>
       <span class="color-line" />
-      <p>The bike come in four different colors.</p>
+      <h3> {{ getLanguage.choseColorH3 }} </h3>
       <transition 
         name="slide-fade" 
         mode="out-in"
       >
-        <img
+        <progressive-img
           :key="image"
           :src="image"
+          class="bike-img"
           alt=""
-        >
+        />
       </transition>
       <div class="colors">
         <div 
@@ -28,22 +28,26 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-
 	name: 'ChooseColor',
 	data: function() {
 		return {
 			circles: [
-				{ class: 'white', image: '/assets/images/whiteorange.png'},
-				{ class: 'red', image: '/assets/images/red.png'},
-				{ class: 'black', image: '/assets/images/blackred.png' },
-				{ class: 'saab', image: '/assets/images/blueorange.png' },
+				{ class: 'white', image: 'img/whiteorange2.png'},
+				{ class: 'red', image: 'img/red2.png'},
+				{ class: 'black', image: 'img/blackred2.png' },
+				{ class: 'saab', image: 'img/blueorange2.png' },
 			],
 			selected: '',
-			image: '/assets/images/whiteorange.png',
+			image: 'img/blackred2.png',
 		}
 	},
-	
+	computed: {
+		...mapGetters([
+			'getLanguage'
+		]),
+	},
 	methods: {
 		selectedImage: function(circle) {
 			this.image = circle.image
@@ -58,10 +62,8 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #181818;
 	height: 100vh;
 	width: 100vw;
-	color: #fff;
 }
 
 .container {
@@ -71,17 +73,23 @@ main {
 	align-items: center;
 }
 h2 {
-	font-size: 3rem;
+	font-size: 50px;
+	line-height: 57px;
 	margin-bottom: 20px;
+	font-family: 'AG-Bold';
 }
 h3 {
-	font-size: 1.3rem;
+	font-size: 18px;
+	line-height: 27px;
 	margin-bottom: 20px;
+	margin-left: 25vw;
+	margin-right: 20vw;
+	text-align: left;
+	font-family: 'AG-Light';
 }
-img {
-	width: 80%;
-	max-height: 150px;
-	transform:rotateY(180deg);
+.bike-img {
+	width: 100%;
+	max-height: 500px;
 	margin-bottom: 20px;
 }
 
@@ -100,16 +108,8 @@ p {
 	opacity: 0;
 }
 
-.color-line::after {
-	display: block;
-	content: '';
-	height: 3px;
-	width: 50vw;
-	margin-bottom: 20px;
-	background: linear-gradient(to right, #00205A 0%, #00205A 50%, cyan 50%, cyan 100%);
-}
 .highlight {
-	color: cyan;
+	color: #00205A;
 }
 .colors {
 	display: flex;
@@ -121,7 +121,8 @@ p {
 	height: 20px;
 	width: 20px;
 	border-radius: 50px;
-	margin-left: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 .white {
 	background: #fff;
@@ -136,6 +137,7 @@ p {
 	background: #00205A;
 }
 .active {
-	border: 2px solid orange;
+
+	transform: scale(1.6)
 }
 </style>

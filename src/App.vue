@@ -5,6 +5,7 @@
     <HeroText />
     <HeroImg2 />
     <Swiper /> 
+    <Merch /> 
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import HeroImg from './components/HeroImg.vue'
 import HeroImg2 from './components/HeroImg2.vue'
 import HeroText from './components/HeroText.vue'
 import Swiper from './components/Swiper.vue'
+import Merch from './components/Merch.vue'
 
 export default {
 	name: 'App',
@@ -23,6 +25,7 @@ export default {
 		HeroImg2,
 		HeroText,
 		Swiper,
+		Merch,
 	}
 }
 </script>
@@ -31,37 +34,37 @@ export default {
 @font-face {
     font-family: "AG-Regular";
 
-    src: url(./assets/fonts/AktivGrotesk-Regular.otf)
+    src: url(./fonts/AktivGrotesk-Regular.otf)
 }
 @font-face {
     font-family: "AG-Light";
-    src: url(./assets/fonts/AktivGrotesk-Light.otf)
+    src: url(./fonts/AktivGrotesk-Light.otf)
 }
 @font-face {
     font-family: "AG-Bold";
-    src: url(./assets/fonts/AktivGrotesk-Bold.otf)
+    src: url(./fonts/AktivGrotesk-Bold.otf)
 }
 @font-face {
     font-family: "AG-Medium";
-    src: url(./assets/fonts/AktivGrotesk-Medium.otf)
+    src: url(./fonts/AktivGrotesk-Medium.otf)
 }
 
 * {
   font-family: 'AG-Medium';
-  color: #fff;
+  color: #fff; 
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: #111;
+  background: #0E0E0E;
 }
 #app {
   font-family: 'AG-Bold', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  height: 4000px; /* Temporary for seeing scrolling */ 
   overflow: hidden;
 }
 
@@ -69,5 +72,14 @@ body {
   height: 5px;
   width: 40%;
   background: linear-gradient(to right, cyan 0%, cyan 50%, blue 50%, blue 100%);
+}
+
+.color-line::after {
+	display: block;
+	content: '';
+	height: 3px;
+	width: 50vw;
+	margin-bottom: 20px;
+	background: linear-gradient(to right, #00205A 0%, #00205A 50%, #D51225 50%, #D51225 100%);
 }
 </style>
