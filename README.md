@@ -4,8 +4,6 @@ A landing page for a futuristic motorcycle.
 
 This is a project by [YRGO](https://github.com/yrgo) students of Web Development, Digital Designer and Computer Graphics.
 
-Live version: [Still WIP](https://laykith.github.io/FastSecurity)
-
 ## Installation
 
 1. Clone the repository `git clone https://github.com/laykith/FastSecurity`
