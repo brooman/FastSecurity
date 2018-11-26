@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="is-size-1">Merchandise</h2>
+    <h2 class="display-1">Merchandise</h2>
     <div class="merchbox">
       <div class="merchitem"><img 
         class="merchimg" 
@@ -39,7 +39,7 @@ export default {
   }
 
   .highlight {
-    color: cyan;
+    color: #d51225;
   }
 
   .merchimg {

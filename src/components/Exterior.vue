@@ -2,9 +2,9 @@
   <main>
     <div class="container">
       <div class="text-container">
-        <h2> {{ getLanguage.exteriorTitle }} </h2>
+        <h2 class="display-1"> {{ getLanguage.exteriorTitle }} </h2>
         <span class="color-line" />
-        <p> {{ getLanguage.exteriorP }} </p>
+        <p class="lead"> {{ getLanguage.exteriorP }} </p>
       </div>
     </div>
   </main>
@@ -59,20 +59,14 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	max-width: 240px;
-	text-align: left;
+	max-width: 70%;
 }
-h2 {
-	font-size: 50px;
-	line-height: 57px;
-	margin-bottom: 20px;
-	font-family: 'AG-Bold';
-}
+
 p {
-	font-size: 18px;
-	line-height: 27px;
+	font-size: 2rem;
+	line-height: 2.1rem;
 	margin-bottom: 20px;
-	text-align: left;
+	text-align: center;
 	font-family: 'AG-Light';
 }
 img {
@@ -82,6 +76,6 @@ img {
 }
 
 .highlight {
-	color: cyan;
+	font-family: AG-Bold;
 }
 </style>

@@ -68,18 +68,54 @@ body {
   overflow: hidden;
 }
 
-.break {
-  height: 5px;
-  width: 40%;
-  background: linear-gradient(to right, cyan 0%, cyan 50%, blue 50%, blue 100%);
-}
-
 .color-line::after {
 	display: block;
 	content: '';
-	height: 3px;
-	width: 50vw;
+	height: 6px;
+	width: 15rem;
 	margin-bottom: 20px;
 	background: linear-gradient(to right, #00205A 0%, #00205A 50%, #D51225 50%, #D51225 100%);
+}
+
+.display-1 {
+  color: #fff;
+  text-shadow: 1rem 1rem 5rem #000; 
+  font-size: 5rem;
+  line-height: 5.1rem;
+}
+.display-2 {
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 1rem 1rem 5rem #000;
+  font-family: 'AG-Light';
+  letter-spacing: 2px;
+}
+
+.lead {
+  font-family: 'AG-Light';
+  word-spacing: 1px;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 3rem;
+  font-size: 1.8rem;
+}
+
+/* 'TOUCH' */
+@media screen and (max-width: 1024px){
+  .display-1 {
+    font-size: 3rem;
+    line-height: 3.1rem;
+  }
+
+  .display-2 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
 }
 </style>

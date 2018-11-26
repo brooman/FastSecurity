@@ -2,9 +2,9 @@
   <main>
     <div class="container">
       <div class="text-container">
-        <h2> {{ getLanguage.interiorTitle }} </h2>
+        <h2 class="display-1"> {{ getLanguage.interiorTitle }} </h2>
         <span class="color-line" />
-        <p> {{ getLanguage.interiorP }} </p>
+        <p class="lead"> {{ getLanguage.interiorP }} </p>
       </div>
     </div>
   </main>
@@ -59,24 +59,22 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	max-width: 240px;
-	text-align: left;
+	max-width: 70%;
 }
-h2 {
-	font-size: 50px;
-	line-height: 57px;
-	margin-bottom: 20px;
-	font-family: 'AG-Bold';
-}
+
 img {
 	width: 100%;
 }
 
 p {
-	font-size: 18px;
-	line-height: 27px;
+	font-size: 2rem;
+	line-height: 2.1rem;
 	margin-bottom: 20px;
-	text-align: left;
+	text-align: center;
 	font-family: 'AG-Light';
+}
+
+.highlight {
+	font-family: AG-Bold;
 }
 </style>

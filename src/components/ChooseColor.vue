@@ -1,9 +1,9 @@
 <template>
   <main>
     <div class="container">
-      <h2> {{ getLanguage.chooseColorTitle }} </h2>
+      <h2 class="display-1"> {{ getLanguage.chooseColorTitle }} </h2>
       <span class="color-line" />
-      <h3> {{ getLanguage.choseColorH3 }} </h3>
+      <p class="lead"> {{ getLanguage.choseColorH3 }} </p>
       <transition 
         name="slide-fade" 
         mode="out-in"
@@ -72,25 +72,20 @@ main {
 	justify-content: space-around;
 	align-items: center;
 }
-h2 {
-	font-size: 50px;
-	line-height: 57px;
-	margin-bottom: 20px;
-	font-family: 'AG-Bold';
-}
-h3 {
-	font-size: 18px;
-	line-height: 27px;
-	margin-bottom: 20px;
-	margin-left: 25vw;
-	margin-right: 20vw;
-	text-align: left;
-	font-family: 'AG-Light';
-}
-.bike-img {
+
+img, .bike-img {
 	width: 100%;
 	max-height: 500px;
 	margin-bottom: 20px;
+}
+
+.progressive-image-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.progressive-image-wrapper > img {
+	max-width: 1000px;
 }
 
 .slide-fade-enter-active {
@@ -105,7 +100,7 @@ h3 {
 }
 
 .highlight {
-	color: #00205A;
+	font-family: AG-Bold;
 }
 .colors {
 	display: flex;

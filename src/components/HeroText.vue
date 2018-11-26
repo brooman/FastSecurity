@@ -1,9 +1,9 @@
 <template>
   <div class="hero">
     <div class="container">
-      <h1 class="has-text-centered is-size-1">
+      <h2 class="has-text-centered display-1">
         {{ getLanguage.heroTitle }}
-      </h1>
+      </h2>
       <span class="color-line" />
       <div class="text-container">
         <p class="lead">
@@ -47,18 +47,6 @@ export default {
     font-family: AG-Bold;
     height: 100vh;
     line-height: 57px;
-  }
-  .lead {
-    font-family: 'AG-Light';
-    word-spacing: 1px;
-    max-width: 280px;
-    line-height: 29px;
-    font-size: 18px;
-  }
-  .is-cyan {
-    background-color: aqua;
-    border-color: transparent;
-    color: #000;
   }
   .contact-link {
     position: relative;

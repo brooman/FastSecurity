@@ -47,17 +47,19 @@ export default {
 .container {
   text-align: center;
   padding-bottom: 20vh;
+  width: 80%;
 }
-.display-1{
-  color: #fff;
-  font-size: 56px;
-  line-height: 57px;
-  padding-bottom: 5vh;
-  font-family: 'AG-Bold';
-}
-.display-2{
-  color: #fff;
-  font-size: 18px;
-  font-family: 'AG-Light';
+
+/* DESKTOP */ 
+@media screen and (min-width: 1024px){
+  .hero-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    margin-top: 0;
+  }
 }
 </style>
