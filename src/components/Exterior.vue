@@ -81,9 +81,9 @@ img {
 	main { background: none; }
 	.side {
 		display: block;
-		background: url('../img/UI.jpg');
-		background-position: center;
-		background-size: cover;
+		background: url('../img/lightcycle_moving_cropped_2.png');
+		background-position:bottom;
+		background-size:auto;
 		background-repeat: no-repeat;
 		width: 50vw;
 		height: 100vh;
