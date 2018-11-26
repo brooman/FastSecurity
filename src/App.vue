@@ -77,6 +77,7 @@ body {
 	height: 6px;
 	width: 15rem;
 	margin-bottom: 20px;
+	margin-bottom: 20px;
 	background: linear-gradient(to right, #00205A 0%, #00205A 50%, #D51225 50%, #D51225 100%);
 }
 
@@ -89,7 +90,7 @@ body {
 .display-2 {
   margin-top: 2rem;
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-shadow: 1rem 1rem 5rem #000;
   font-family: 'AG-Light';
   letter-spacing: 2px;
@@ -113,7 +114,7 @@ body {
   }
 
   .display-2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .lead {

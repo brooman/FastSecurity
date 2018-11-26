@@ -49,6 +49,14 @@ export default {
 
 /* DESKTOP */ 
 @media screen and (min-width: 768px){
+  .hero {
+    height: 100vh;
+    background: url('../img/background_image_land.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: saturate(70%);
+  }
   .hero-body {
     display: flex;
     justify-content: center;

@@ -39,7 +39,7 @@ export default {
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 80vw;
     height: 100vh;
@@ -58,5 +58,8 @@ export default {
     height: 50px;
     border: none;
     border-radius: 50px;
+  }
+  h2 {
+    max-width: 900px;
   }
 </style>

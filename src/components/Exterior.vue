@@ -78,20 +78,37 @@ img {
 }
 
 @media screen and (min-width: 768px ){
-	main {
-		background: none;
-	}
+	main { background: none; }
 	.side {
 		display: block;
 		background: url('../img/lightcycle_moving_cropped_2.png');
-		background-position: center;
-		background-size: cover;
+		background-position:bottom;
+		background-size:auto;
 		background-repeat: no-repeat;
 		width: 50vw;
 		height: 100vh;
 	}
 	.content-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 0;
 		width: 50vw;
+	}
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		max-width: 50%;
+		height: 100vh;
+		text-align: left;
+	}
+	.lead {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
 	}
 }
 </style>

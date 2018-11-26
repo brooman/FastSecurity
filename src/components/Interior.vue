@@ -42,10 +42,10 @@ main {
 	height: 100vh;
 	width: 100vw;
 	color: #fff;
-			background: linear-gradient(black 40%, transparent), url('../img/UI.jpg');
-		background-position: bottom;
-		background-size: 170%;
-		background-repeat: no-repeat;
+	background: linear-gradient(black 40%, transparent), url('../img/UI.jpg');
+	background-position: bottom;
+	background-size: 170%;
+	background-repeat: no-repeat;
 }
 
 .side {
@@ -86,9 +86,27 @@ img {
 		width: 50vw;
 		height: 100vh;
 	}
-
 	.content-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 0;
 		width: 50vw;
+	}
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		max-width: 50%;
+		height: 100vh;
+		text-align: left;
+	}
+	.lead {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
 	}
 }
 </style>
