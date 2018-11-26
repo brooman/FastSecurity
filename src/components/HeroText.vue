@@ -12,7 +12,8 @@
       </div>
       <button
         class="contact-link" 
-      >KEEP ME INFORMED ></button>
+      >KEEP ME INFORMED >
+      </button>
     </div>
   </div>
 </template>

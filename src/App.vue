@@ -5,7 +5,8 @@
     <HeroText />
     <HeroImg2 />
     <Swiper /> 
-    <Merch /> 
+    <Merch />
+    <Footer />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import HeroImg2 from './components/HeroImg2.vue'
 import HeroText from './components/HeroText.vue'
 import Swiper from './components/Swiper.vue'
 import Merch from './components/Merch.vue'
+import Footer from './components/Footer.vue'
 
 export default {
 	name: 'App',
@@ -26,6 +28,7 @@ export default {
 		HeroText,
 		Swiper,
 		Merch,
+		Footer,
 	}
 }
 </script>
