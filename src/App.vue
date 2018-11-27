@@ -140,6 +140,7 @@ body {
   .lead {
     font-size: 1.4rem;
     line-height: 1.5rem;
+    width: 100%;
   }
 }
 </style>
