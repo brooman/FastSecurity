@@ -18,12 +18,14 @@
       <div class="navbar-item">
         <span
           class="active"
-          @click="changeLanguage(en)"
+          value="en"
+          @click="changeLanguage(en, 'en')"
         > 
           EN
         </span>
-        <span 
-          @click="changeLanguage(sv)"
+        <span
+          value="sv"
+          @click="changeLanguage(sv, 'sv')"
         >
           SV 
         </span>
@@ -54,8 +56,17 @@ export default {
 		...mapMutations([
 			'CHANGE_LANGUAGE'
 		]),
-		changeLanguage: function(pickedLanguage) {
-			this.CHANGE_LANGUAGE(pickedLanguage)
+		changeLanguage: function(pickedLanguage, name) {
+      this.CHANGE_LANGUAGE(pickedLanguage)
+
+      //Remove active classes
+      this.$el.querySelectorAll('.active').forEach(btn => {
+          btn.classList.remove('active')
+      })
+
+      //Add active to selected element
+      this.$el.querySelector(`span[value=${name}]`).classList.add('active')
+
 		}
 	}
 }
@@ -66,18 +77,21 @@ export default {
     display: flex;
     position: absolute !important;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
   }
   .navbar-start {
     display:flex;
+    align-items: center;
     padding-left: 20px;
   }
   .saab {
-    width: 50px;
-    max-height: 50px;
+    max-height: 100px;
   }
   .fs {
+    height: 8rem;
+    max-height: 200px;
     align-self: flex-start;
   }
   .navbar-end {
@@ -85,9 +99,17 @@ export default {
     padding-right: 20px;
   }
   .navbar-item {
+    font-size: 2rem;
     font-family: 'AG-Light';
+    cursor: pointer;
   }
   .active {
     font-family: 'AG-Bold';
+  }
+
+  @media screen and (max-width: 768px){
+    .saab {
+      display: none;
+    }
   }
 </style>
