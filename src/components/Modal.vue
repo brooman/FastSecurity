@@ -6,10 +6,13 @@
     <div class="modal-background" />
     <div class="modal-content">
       <div class="card">
-        <div style="display: flex; justify-content: flex-end; overflow: visible;">
-          <button @click="toggle()" class="close-button">X</button>
+        <div class="close-button-container">
+          <button 
+            class="close-button" 
+            @click="toggle()"
+          >X</button>
         </div>
-        <div class="card-content">
+        <div class="card-content active">
           <p class="title">
             {{ getLanguage.modalTitle1 }}
           </p>
@@ -30,6 +33,42 @@
               </a>
             </div>
           </div>
+          <li class="checkbox">
+            <span class="checkbox"><input 
+              type="checkbox" 
+              :checked="checkboxChecked"
+            ></span>
+            <a class="button is-text">{{ getLanguage.modalFolderLink }} > </a>
+          </li>
+        </div>
+        <div class="card-content">
+          <p class="title">
+            {{ getLanguage.modalTitle2 }}
+          </p>
+          <p class="subtitle">
+            {{ getLanguage.modalSubtitle2 }}
+          </p>
+          <li class="checkbox">           <span class="checkbox"><input 
+            type="checkbox" 
+            :checked="checkboxChecked"
+          ></span>
+            <a class="button is-text">{{ getLanguage.modalFolderLink }} > </a>
+          </li>
+        </div>
+        <div class="card-content">
+          <p class="title">
+            {{ getLanguage.modalTitle3 }}
+          </p>
+          <p class="subtitle">
+            {{ getLanguage.modalSubtitle3 }}
+          </p>
+          <li class="checkbox">
+            <span class="checkbox"><input 
+              type="checkbox" 
+              :checked="checkboxChecked"
+            ></span>
+            <a class="button is-text">{{ getLanguage.modalFolderLink }} > </a>
+          </li>
         </div>
       </div>
     </div>
@@ -41,7 +80,8 @@ import { mapGetters } from 'vuex'
 export default {
 	data: function() {
 		return {
-			active: false
+			active: false,
+			checkboxChecked: false
 		};
 	},
 	computed: {
@@ -52,6 +92,10 @@ export default {
 	methods: {
 		toggle () {
 			this.active = !this.active
+		},
+  
+		checkbox () {
+			this.checkboxChecked = !this.checkboxChecked
 		}
 	}
 }
@@ -62,6 +106,78 @@ export default {
     background-color: black;
   }
 
+  li.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .close-button-container {
+    display: flex; 
+    justify-content: flex-end;
+    overflow: visible;
+    height: 0px;
+  }
+
+  .card-content {
+    display: none;
+  }
+  .card-content.active {
+    display: block;
+  }
+
+  /* CHECKBOXES ARE NOT EASY */
+  .checkbox > input[type=checkbox], input[type=checkbox]:checked {
+    box-sizing: border-box;
+    padding: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .checkbox > a{
+    line-height: 1rem;
+    font-size: 1rem;
+  }
+
+  .checkbox > input[type=checkbox]::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #222;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  .checkbox > input[type=checkbox]:checked::after {
+      background-color: #00205A;
+      border: 2px solid #00205A;
+  }
+  .checkbox > input[type=checkbox]:before {
+    content: "";
+    display: block;
+    opacity: 0;
+  }
+
+  .checkbox > input[type=checkbox]:checked::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin: 0px;
+    width: 0.6rem;
+    height: 1.1rem;
+    left: 30%;
+    z-index: 99;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(34deg);
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 1;
+  }
+  
+  /* End of checkboxes */ 
+  
   .modal-content {
     overflow: visible !important;
   }
