@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Modal />
     <Navbar />
     <HeroImg />
     <HeroText />
@@ -18,6 +19,7 @@ import HeroText from './components/HeroText.vue'
 import Swiper from './components/Swiper.vue'
 import Merch from './components/Merch.vue'
 import ElFooto from './components/Footer.vue'
+import Modal from './components/Modal.vue'
 
 export default {
 	name: 'App',
@@ -29,6 +31,7 @@ export default {
 		Swiper,
 		Merch,
 		ElFooto,
+		Modal,
 	}
 }
 </script>
