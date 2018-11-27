@@ -5,10 +5,10 @@
         <h2 class="display-1"> {{ getLanguage.footerTitle }} </h2>
       </div>
     </div>
-      <div
-        class="contact-link" 
-      ><a href="#"> KEEP ME INFORMED ></a>
-      </div>
+    <button
+      class="contact-link" 
+      href="#"
+    > KEEP ME INFORMED ></button>
   </main>
 </template>
 

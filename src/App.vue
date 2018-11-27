@@ -96,26 +96,25 @@ body {
   letter-spacing: 2px;
 }
 
-  .contact-link {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    position: relative;
-    bottom: 10px;
-    font-size: 1rem;
-    font-family: 'AG-Bold';
-    text-decoration: none;
-    background: #D51225;
-    width: 215px;
-    height: 50px;
-    border: none;
-    border-radius: 50px;
-  }
+.contact-link {
+  background: none;
+  border: 3px solid #D51225;
+  border-radius: 12px;
+  width: 215px;
+  height: 50px;
+  font-size: 0.8rem;
+  font-family: 'AG-Regular';
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
 
-  .contact-link > a {
-    color: #fff;
-    text-decoration: none;
-  }
+.contact-link:hover {
+  cursor: pointer;
+  transition: border 0.3s;
+  border: 3px solid #00205A;
+  color: #fff;
+}
 
 .lead {
   font-family: 'AG-Light';

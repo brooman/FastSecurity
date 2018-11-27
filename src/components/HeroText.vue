@@ -10,10 +10,10 @@
           {{ getLanguage.heroText }}
         </p>
       </div>
-      <div
+      <button
         class="contact-link" 
-      ><a href="#"> KEEP ME INFORMED ></a>
-      </div>
+        href="#"
+      > KEEP ME INFORMED ></button>
     </div>
   </div>
 </template>
