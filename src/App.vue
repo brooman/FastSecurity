@@ -96,6 +96,27 @@ body {
   letter-spacing: 2px;
 }
 
+  .contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    bottom: 10px;
+    font-size: 1rem;
+    font-family: 'AG-Bold';
+    text-decoration: none;
+    background: #D51225;
+    width: 215px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+  }
+
+  .contact-link > a {
+    color: #fff;
+    text-decoration: none;
+  }
+
 .lead {
   font-family: 'AG-Light';
   word-spacing: 1px;

@@ -10,10 +10,10 @@
           {{ getLanguage.heroText }}
         </p>
       </div>
-      <button
+      <div
         class="contact-link" 
-      >KEEP ME INFORMED >
-      </button>
+      ><a href="#"> KEEP ME INFORMED ></a>
+      </div>
     </div>
   </div>
 </template>
@@ -48,16 +48,6 @@ export default {
     font-family: AG-Bold;
     height: 100vh;
     line-height: 57px;
-  }
-  .contact-link {
-    position: relative;
-    bottom: 10px;
-    text-decoration: none;
-    background: #D51225;
-    width: 215px;
-    height: 50px;
-    border: none;
-    border-radius: 50px;
   }
   h2 {
     max-width: 900px;

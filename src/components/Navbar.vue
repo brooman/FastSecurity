@@ -57,15 +57,15 @@ export default {
 			'CHANGE_LANGUAGE'
 		]),
 		changeLanguage: function(pickedLanguage, name) {
-      this.CHANGE_LANGUAGE(pickedLanguage)
+			this.CHANGE_LANGUAGE(pickedLanguage)
 
-      //Remove active classes
-      this.$el.querySelectorAll('.active').forEach(btn => {
-          btn.classList.remove('active')
-      })
+			//Remove active classes
+			this.$el.querySelectorAll('.active').forEach(btn => {
+				btn.classList.remove('active')
+			})
 
-      //Add active to selected element
-      this.$el.querySelector(`span[value=${name}]`).classList.add('active')
+			//Add active to selected element
+			this.$el.querySelector(`span[value=${name}]`).classList.add('active')
 
 		}
 	}

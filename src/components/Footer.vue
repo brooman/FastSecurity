@@ -5,10 +5,10 @@
         <h2 class="display-1"> {{ getLanguage.footerTitle }} </h2>
       </div>
     </div>
-    <button
-      class="contact-link" 
-    >KEEP ME INFORMED >
-    </button>
+      <div
+        class="contact-link" 
+      ><a href="#"> KEEP ME INFORMED ></a>
+      </div>
   </main>
 </template>
 
@@ -68,16 +68,6 @@ img {
 
 .highlight {
 	color: cyan;
-}
-.contact-link {
-	position: relative;
-	bottom: 10px;
-	text-decoration: none;
-	background: #D51225;
-	width: 215px;
-	height: 50px;
-	border: none;
-	border-radius: 50px;
 }
 
 @media screen and (min-width: 768px) {
