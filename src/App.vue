@@ -90,10 +90,10 @@ body {
 	display: block;
 	content: '';
 	height: 3px;
-	width: 15rem;
-	margin-bottom: 20px;
+	width: 10rem;
 	margin-bottom: 20px;
 	background: linear-gradient(to right, #00205A 0%, #00205A 50%, #D51225 50%, #D51225 100%);
+  align-self: center;
 }
 
 .modal-open {
@@ -113,6 +113,8 @@ body {
   text-shadow: 1rem 1rem 5rem #000; 
   font-size: 3rem;
   line-height: 3.1rem;
+  padding-bottom: 3vh;
+
 }
 .display-2 {
   margin-top: 2rem;
@@ -151,6 +153,10 @@ body {
   margin-left: auto;
   line-height: 3rem;
   font-size: 1.8rem;
+  letter-spacing: 0.3px;
+  text-align: left;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
 }
 
 /* 'TOUCH' */
