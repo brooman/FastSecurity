@@ -4,10 +4,9 @@
 
     <!-- TEMPORARY MODAL BUTTON -->
     <button 
-      class="button" 
-      style="position: fixed; z-index: 100" 
+      class="modal-open" 
       @click="toggleModal()"
-    >TOGGLE</button>
+    >[-]</button>
 
     <Navbar />
     <HeroImg />
@@ -97,16 +96,28 @@ body {
 	background: linear-gradient(to right, #00205A 0%, #00205A 50%, #D51225 50%, #D51225 100%);
 }
 
+.modal-open {
+    background-color: red;
+    z-index: 99;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
 .display-1 {
   color: #fff;
   text-shadow: 1rem 1rem 5rem #000; 
-  font-size: 5rem;
-  line-height: 5.1rem;
+  font-size: 3rem;
+  line-height: 3.1rem;
 }
 .display-2 {
   margin-top: 2rem;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-shadow: 1rem 1rem 5rem #000;
   font-family: 'AG-Light';
   letter-spacing: 2px;
@@ -118,7 +129,7 @@ body {
   border-radius: 12px;
   width: 215px;
   height: 50px;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-family: 'AG-Regular';
   color: #fff;
   text-align: center;

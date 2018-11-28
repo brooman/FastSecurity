@@ -6,14 +6,30 @@
     <div class="modal-background" />
     <div class="modal-content">
       <div class="card">
-        <a @click="previous()"> BACK </a>
         <div class="close-button-container">
           <button 
             class="close-button" 
             @click="toggle()"
           >X</button>
         </div>
-
+        <div class="return-button-container">
+          <a 
+            class="return-button" 
+            @click="previous()"
+          >
+            <svg 
+              viewBox="0 0 10 11" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                d="M4.24268 1L8.48532 5.24264L4.24268 9.48528" 
+                stroke="black" 
+                stroke-width="2"
+              />
+            </svg>
+          </a>
+        </div>
         <!-- PAGE 1 --> 
         <div 
           :class="{ active: activePage === 1 }" 
@@ -156,10 +172,11 @@ export default {
 </script>
 
 <style scoped>
-  .card{
-    background-color: black;
-  }
 
+  .modal {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
   li.checkbox {
     display: flex;
     justify-content: center;
@@ -232,8 +249,26 @@ export default {
   
   /* End of checkboxes */ 
   
+  .return-button-container {
+    height: 0px;
+    width: 100%;
+    display: flex;
+  }
+
+  .return-button {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .return-button > svg{
+    transform: rotate(180deg);
+    padding: 3px;
+    height: 100%;
+    width: 100%;
+  }
   .modal-content {
     overflow: visible !important;
+    margin: 5rem;
   }
   
   .close-button {
