@@ -1,9 +1,9 @@
 <template>
   <div class="hero">
     <div class="container">
-      <h2 class="has-text-centered display-1">
+      <h1 class="display-1">
         {{ getLanguage.heroTitle }}
-      </h2>
+      </h1>
       <span class="color-line" />
       <div class="text-container">
         <p class="lead">
@@ -13,7 +13,7 @@
       <button
         class="contact-link" 
         href="#"
-      > KEEP ME INFORMED ></button>
+      > KEEP ME INFORMED</button>
     </div>
   </div>
 </template>
@@ -39,7 +39,7 @@ export default {
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 80vw;
     height: 100vh;
@@ -49,7 +49,19 @@ export default {
     height: 100vh;
     line-height: 57px;
   }
-  h2 {
-    max-width: 900px;
+  .display-1 {
+    width: 60%;
+    text-align: left;
+    padding-bottom: 3vh;
+    
+  }
+  .color-line {
+    align-self: flex-start;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .lead {
+    padding-bottom: 3vh;
+    padding-top: 3vh;
   }
 </style>

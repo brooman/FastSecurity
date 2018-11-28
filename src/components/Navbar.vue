@@ -74,12 +74,14 @@ export default {
 
 <style scoped>
   .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
-    position: fixed;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    background-color: transparent;
   }
   .navbar-start {
     display:flex;
@@ -99,7 +101,7 @@ export default {
     padding-right: 20px;
   }
   .navbar-item {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'AG-Light';
     cursor: pointer;
   }

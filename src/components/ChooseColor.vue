@@ -2,9 +2,9 @@
   <main>
     <div class="container">
       <div class="text-box">
-        <h2 class="display-1"> {{ getLanguage.chooseColorTitle }} </h2>
+        <h1 class="display-1"> {{ getLanguage.chooseColorTitle }} </h1>
         <span class="color-line" />
-        <p class="lead"> {{ getLanguage.choseColorH3 }} </p>
+        <p class="lead"> {{ getLanguage.chooseColorH3 }} </p>
       </div>
       <div class="image-box">
         <transition 
@@ -63,8 +63,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 100vh;
 	width: 100vw;
+}
+
+.text-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5vh 0;
 }
 
 img, .bike-img {
@@ -159,6 +170,6 @@ img, .bike-img {
 		display: flex;
 		width: 80%;
 		justify-content: center;
-}
+	}
 }
 </style>

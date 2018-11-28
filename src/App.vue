@@ -89,11 +89,11 @@ body {
 .color-line::after {
 	display: block;
 	content: '';
-	height: 6px;
-	width: 15rem;
-	margin-bottom: 20px;
+	height: 3px;
+	width: 10rem;
 	margin-bottom: 20px;
 	background: linear-gradient(to right, #00205A 0%, #00205A 50%, #D51225 50%, #D51225 100%);
+  align-self: center;
 }
 
 .modal-open {
@@ -113,6 +113,8 @@ body {
   text-shadow: 1rem 1rem 5rem #000; 
   font-size: 3rem;
   line-height: 3.1rem;
+  padding-bottom: 3vh;
+
 }
 .display-2 {
   margin-top: 2rem;
@@ -149,6 +151,9 @@ body {
   width: 60%;
   margin-right: auto;
   margin-left: auto;
+  letter-spacing: 0.3px;
+  text-align: left;
+  padding-bottom: 3vh;
   line-height: 2.5rem;
   font-size: 1.2rem;
 }
