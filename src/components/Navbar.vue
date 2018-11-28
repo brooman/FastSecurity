@@ -75,7 +75,7 @@ export default {
 <style scoped>
   .navbar {
     display: flex;
-    position: absolute !important;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     width: 100%;
