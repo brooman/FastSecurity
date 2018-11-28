@@ -61,19 +61,10 @@
             </div>
           </div>
 
-          <!-- CHECKBOX PAGE 1 -->
-          <li class="checkbox">
-            <span class="checkbox">
-              <input 
-                type="checkbox" 
-                :checked="checkboxChecked"
-              >
-            </span>
-            <a 
+                <a 
               class="button is-text"
               @click="setActive(3)"
             >{{ getLanguage.modalFolderLink }} > </a>
-          </li>
         </div><!--END OF PAGE 1-->
 
         <!-- PAGE 2 --> 
@@ -88,19 +79,10 @@
             {{ getLanguage.modalSubtitle2 }}
           </p>
 
-          <!-- CHECKBOX PAGE 2 -->
-          <li class="checkbox">
-            <span class="checkbox">
-              <input 
-                type="checkbox" 
-                :checked="checkboxChecked"
-              >
-            </span>
             <a 
               class="button is-text"
               @click="setActive(3)"
             >{{ getLanguage.modalFolderLink }} > </a>
-          </li>
         </div><!--END OF PAGE 2-->
 
 
@@ -115,17 +97,40 @@
           <p class="subtitle">
             {{ getLanguage.modalSubtitle3 }}
           </p>
-
-          <!-- CHECKBOX PAGE 3 -->
-          <li class="checkbox">
-            <span class="checkbox">
-              <input 
-                type="checkbox" 
-                :checked="checkboxChecked"
-              >
-            </span>
-            <a class="button is-text">{{ getLanguage.modalFolderLink }} > </a>
-          </li>
+          <!-- PAGE 3 FORM -->
+          <input 
+            style="width: 100%" 
+            class="input" 
+            type="text" 
+            placeholder="Full name"
+          >
+          <div style="display: flex;">
+            <input 
+              style="width: 50%"
+              class="input" 
+              type="text" 
+              placeholder="Postal code"
+            >
+            <input 
+              style="width: 50%" 
+              class="input" 
+              type="text" 
+              placeholder="City"
+            >
+          </div>
+          <div style="display: flex;">
+            <input 
+              style="width: 50%" 
+              class="input" 
+              type="text" 
+              placeholder="Country"
+            >
+            <input 
+              class="button" 
+              type="submit" 
+              value="Send"
+            >
+          </div> 
 
 
         </div><!--END OF PAGE 3-->
@@ -142,7 +147,6 @@ export default {
 			active: false,
 			activePage: 1,
 			previousPage: 1,
-			checkboxChecked: false
 		};
 	},
 	computed: {
@@ -153,10 +157,6 @@ export default {
 	methods: {
 		toggle () {
 			this.active = !this.active
-		},
-  
-		checkbox () {
-			this.checkboxChecked = !this.checkboxChecked
 		},
     
 		setActive (id) {
@@ -177,11 +177,6 @@ export default {
     justify-content: flex-end;
     align-items: flex-end;
   }
-  li.checkbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .close-button-container {
     display: flex; 
@@ -196,58 +191,6 @@ export default {
   .card-content.active {
     display: block;
   }
-
-  /* CHECKBOXES ARE NOT EASY */
-  .checkbox > input[type=checkbox], input[type=checkbox]:checked {
-    box-sizing: border-box;
-    padding: 0;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .checkbox > a{
-    line-height: 1rem;
-    font-size: 1rem;
-  }
-
-  .checkbox > input[type=checkbox]::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    border: 2px solid #222;
-    border-radius: 3px;
-    background-color: #fff;
-  }
-  .checkbox > input[type=checkbox]:checked::after {
-      background-color: #00205A;
-      border: 2px solid #00205A;
-  }
-  .checkbox > input[type=checkbox]:before {
-    content: "";
-    display: block;
-    opacity: 0;
-  }
-
-  .checkbox > input[type=checkbox]:checked::before {
-    content: "";
-    display: block;
-    position: absolute;
-    margin: 0px;
-    width: 0.6rem;
-    height: 1.1rem;
-    left: 30%;
-    z-index: 99;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    transform: rotate(34deg);
-    transition: opacity 0.3s, transform 0.3s;
-    opacity: 1;
-  }
-  
-  /* End of checkboxes */ 
   
   .return-button-container {
     height: 0px;
