@@ -61,10 +61,10 @@
             </div>
           </div>
 
-                <a 
-              class="button is-text"
-              @click="setActive(3)"
-            >{{ getLanguage.modalFolderLink }} > </a>
+          <a 
+            class="button is-text"
+            @click="setActive(3)"
+          >{{ getLanguage.modalFolderLink }} > </a>
         </div><!--END OF PAGE 1-->
 
         <!-- PAGE 2 --> 
@@ -79,10 +79,10 @@
             {{ getLanguage.modalSubtitle2 }}
           </p>
 
-            <a 
-              class="button is-text"
-              @click="setActive(3)"
-            >{{ getLanguage.modalFolderLink }} > </a>
+          <a 
+            class="button is-text"
+            @click="setActive(3)"
+          >{{ getLanguage.modalFolderLink }} > </a>
         </div><!--END OF PAGE 2-->
 
 
