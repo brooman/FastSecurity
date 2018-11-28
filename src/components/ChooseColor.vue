@@ -159,6 +159,6 @@ img, .bike-img {
 		display: flex;
 		width: 80%;
 		justify-content: center;
-}
+	}
 }
 </style>

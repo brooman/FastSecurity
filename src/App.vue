@@ -156,7 +156,6 @@ body {
   letter-spacing: 0.3px;
   text-align: left;
   padding-bottom: 3vh;
-  padding-top: 3vh;
 }
 
 /* 'TOUCH' */
