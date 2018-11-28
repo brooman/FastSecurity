@@ -90,7 +90,7 @@ body {
 .color-line::after {
 	display: block;
 	content: '';
-	height: 6px;
+	height: 3px;
 	width: 15rem;
 	margin-bottom: 20px;
 	margin-bottom: 20px;
