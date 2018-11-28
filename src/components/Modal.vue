@@ -12,6 +12,8 @@
             @click="toggle()"
           >X</button>
         </div>
+
+        <!-- PAGE 1 --> 
         <div class="card-content active">
           <p class="title">
             {{ getLanguage.modalTitle1 }}
@@ -19,6 +21,8 @@
           <p class="subtitle">
             {{ getLanguage.modalSubtitle1 }}
           </p>
+
+          <!-- TEXT INPUT PAGE 1-->
           <div class="field has-addons">
             <div class="control">
               <input 
@@ -33,14 +37,20 @@
               </a>
             </div>
           </div>
+
+          <!-- CHECKBOX PAGE 1 -->
           <li class="checkbox">
-            <span class="checkbox"><input 
-              type="checkbox" 
-              :checked="checkboxChecked"
-            ></span>
+            <span class="checkbox">
+              <input 
+                type="checkbox" 
+                :checked="checkboxChecked"
+              >
+            </span>
             <a class="button is-text">{{ getLanguage.modalFolderLink }} > </a>
           </li>
-        </div>
+        </div><!--END OF PAGE 1-->
+
+        <!-- PAGE 2 --> 
         <div class="card-content">
           <p class="title">
             {{ getLanguage.modalTitle2 }}
@@ -48,13 +58,21 @@
           <p class="subtitle">
             {{ getLanguage.modalSubtitle2 }}
           </p>
-          <li class="checkbox">           <span class="checkbox"><input 
-            type="checkbox" 
-            :checked="checkboxChecked"
-          ></span>
+
+          <!-- CHECKBOX PAGE 2 -->
+          <li class="checkbox">
+            <span class="checkbox">
+              <input 
+                type="checkbox" 
+                :checked="checkboxChecked"
+              >
+            </span>
             <a class="button is-text">{{ getLanguage.modalFolderLink }} > </a>
           </li>
-        </div>
+        </div><!--END OF PAGE 2-->
+
+
+        <!-- PAGE 3 -->
         <div class="card-content">
           <p class="title">
             {{ getLanguage.modalTitle3 }}
@@ -62,17 +80,23 @@
           <p class="subtitle">
             {{ getLanguage.modalSubtitle3 }}
           </p>
+
+          <!-- CHECKBOX PAGE 3 -->
           <li class="checkbox">
-            <span class="checkbox"><input 
-              type="checkbox" 
-              :checked="checkboxChecked"
-            ></span>
+            <span class="checkbox">
+              <input 
+                type="checkbox" 
+                :checked="checkboxChecked"
+              >
+            </span>
             <a class="button is-text">{{ getLanguage.modalFolderLink }} > </a>
           </li>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
+        </div><!--END OF PAGE 3-->
+      </div><!-- .card -->
+    </div><!-- .modal-content -->
+  </div><!-- .modal -->
 </template>
 
 <script>
@@ -101,7 +125,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .card{
     background-color: black;
   }
