@@ -1,6 +1,14 @@
 <template>
   <div id="app">
-    <Modal />
+    <Modal ref="modal" />
+
+    <!-- TEMPORARY MODAL BUTTON -->
+    <button 
+      class="button" 
+      style="position: fixed; z-index: 100" 
+      @click="toggleModal()"
+    >TOGGLE</button>
+
     <Navbar />
     <HeroImg />
     <HeroText />
@@ -32,6 +40,11 @@ export default {
 		Merch,
 		ElFooto,
 		Modal,
+	},
+	methods: {
+		toggleModal() {
+			this.$refs.modal.toggle()
+		}
 	}
 }
 </script>
