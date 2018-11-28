@@ -4,7 +4,7 @@
       <div class="text-box">
         <h2 class="display-1"> {{ getLanguage.chooseColorTitle }} </h2>
         <span class="color-line" />
-        <p class="lead"> {{ getLanguage.choseColorH3 }} </p>
+        <p class="lead"> {{ getLanguage.chooseColorH3 }} </p>
       </div>
       <div class="image-box">
         <transition 
