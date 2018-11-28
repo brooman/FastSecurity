@@ -6,6 +6,7 @@
     <div class="modal-background" />
     <div class="modal-content">
       <div class="card">
+        <a @click="previous()"> BACK </a>
         <div class="close-button-container">
           <button 
             class="close-button" 
@@ -14,7 +15,10 @@
         </div>
 
         <!-- PAGE 1 --> 
-        <div class="card-content active">
+        <div 
+          :class="{ active: activePage === 1 }" 
+          class="card-content"
+        >
           <p class="title">
             {{ getLanguage.modalTitle1 }}
           </p>
@@ -32,7 +36,10 @@
               >
             </div>
             <div class="control">
-              <a class="button is-info">
+              <a 
+                class="button is-info"
+                @click="setActive(2)"
+              >
                 {{ getLanguage.subscribe }}
               </a>
             </div>
@@ -46,12 +53,18 @@
                 :checked="checkboxChecked"
               >
             </span>
-            <a class="button is-text">{{ getLanguage.modalFolderLink }} > </a>
+            <a 
+              class="button is-text"
+              @click="setActive(3)"
+            >{{ getLanguage.modalFolderLink }} > </a>
           </li>
         </div><!--END OF PAGE 1-->
 
         <!-- PAGE 2 --> 
-        <div class="card-content">
+        <div 
+          :class="{ active: activePage === 2 }" 
+          class="card-content"
+        >
           <p class="title">
             {{ getLanguage.modalTitle2 }}
           </p>
@@ -67,13 +80,19 @@
                 :checked="checkboxChecked"
               >
             </span>
-            <a class="button is-text">{{ getLanguage.modalFolderLink }} > </a>
+            <a 
+              class="button is-text"
+              @click="setActive(3)"
+            >{{ getLanguage.modalFolderLink }} > </a>
           </li>
         </div><!--END OF PAGE 2-->
 
 
         <!-- PAGE 3 -->
-        <div class="card-content">
+        <div 
+          :class="{ active: activePage === 3 }" 
+          class="card-content"
+        >
           <p class="title">
             {{ getLanguage.modalTitle3 }}
           </p>
@@ -105,6 +124,8 @@ export default {
 	data: function() {
 		return {
 			active: false,
+			activePage: 1,
+			previousPage: 1,
 			checkboxChecked: false
 		};
 	},
@@ -120,6 +141,15 @@ export default {
   
 		checkbox () {
 			this.checkboxChecked = !this.checkboxChecked
+		},
+    
+		setActive (id) {
+			this.previousPage = this.activePage
+			this.activePage = id
+		},
+    
+		previous () {
+			this.activePage = this.previousPage
 		}
 	}
 }
