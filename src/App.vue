@@ -151,18 +151,18 @@ body {
   width: 60%;
   margin-right: auto;
   margin-left: auto;
-  line-height: 3rem;
-  font-size: 1.8rem;
   letter-spacing: 0.3px;
   text-align: left;
   padding-bottom: 3vh;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
 }
 
 /* 'TOUCH' */
 @media screen and (max-width: 768px){
   .display-1 {
-    font-size: 3rem;
-    line-height: 3.1rem;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
   }
 
   .display-2 {

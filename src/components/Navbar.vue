@@ -101,7 +101,7 @@ export default {
     padding-right: 20px;
   }
   .navbar-item {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'AG-Light';
     cursor: pointer;
   }
