@@ -156,7 +156,7 @@ export default {
 	},
 	methods: {
 		toggle () {
-      this.active = !this.active
+			this.active = !this.active
 		},
     
 		setActive (id) {

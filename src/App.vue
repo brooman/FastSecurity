@@ -48,12 +48,12 @@ export default {
 
 const mailMessage = document.querySelector('.mail-message')
 setTimeout(() => {
-  mailMessage.textContent = 'Hey! Don\'t forget to leave your email down below.'
-  mailMessage.classList.add('visible')
+	mailMessage.textContent = 'Hey! Don\'t forget to leave your email down below.'
+	mailMessage.classList.add('visible')
 
 }, 20000)
 setTimeout(() => {
-  mailMessage.classList.remove('visible')
+	mailMessage.classList.remove('visible')
 
 }, 40000)
 </script>

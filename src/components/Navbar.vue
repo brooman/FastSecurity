@@ -70,7 +70,6 @@ export default {
 		}
 	}
 }
-const mailMessage = document.querySelector('.mail-message')
 </script>
 
 <style scoped>
