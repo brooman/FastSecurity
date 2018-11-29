@@ -76,16 +76,20 @@ export default {
 }
 
 .swiper-button-disabled {
-	display: none;
+	opacity: 0 !important;
 }
 .swiper-button-prev {
 	transform: rotate(90deg);
-	animation: shaky-left 1s ease-in-out infinite;
+	animation: shaky-left 6s ease-in-out infinite;
+	animation-direction: alternate;
+	animation-delay: 2s;
 }
 
 .swiper-button-next {
 	transform: rotate(-90deg);
-	animation: shaky-right 1s ease-in-out infinite;
+	animation: shaky-right 6s ease-in-out infinite;
+	animation-direction: alternate;
+	animation-delay: 2s;
 }
 
 
@@ -93,28 +97,48 @@ export default {
   0% {
     right: 0px;
   }
-
+  10% {
+    right: 10px;
+  }
+	20% {
+		right: 0px;
+	}
+  30% {
+    right: 10px;
+  }
+	40% {
+		right: 0px;
+	}
   50% {
     right: 10px;
   }
-
   100% {
-    right: 0px;
+    right: 10px;
   }
 }
 
 
 @keyframes shaky-left {
-  0% {
+ 0% {
     left: 0px;
   }
-
+  10% {
+    left: 10px;
+  }
+	20% {
+		left: 0px;
+	}
+  30% {
+    left: 10px;
+  }
+	40% {
+		left: 0px;
+	}
   50% {
     left: 10px;
   }
-
   100% {
-    left: 0px;
+    left: 10px;
   }
 }
 </style>
