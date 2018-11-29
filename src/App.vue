@@ -7,7 +7,6 @@
       class="modal-open" 
       @click="toggleModal()"
     >[-]</button>
-
     <Navbar />
     <HeroImg />
     <HeroText />
@@ -46,6 +45,17 @@ export default {
 		}
 	}
 }
+
+const mailMessage = document.querySelector('.mail-message')
+setTimeout(() => {
+	mailMessage.textContent = 'Hey! Don\'t forget to leave your email down below.'
+	mailMessage.classList.add('visible')
+
+}, 20000)
+setTimeout(() => {
+	mailMessage.classList.remove('visible')
+
+}, 40000)
 </script>
 
 <style>
@@ -157,6 +167,20 @@ body {
   line-height: 2.5rem;
   font-size: 1.2rem;
 }
+.mail-message {
+  display: none;
+  position: absolute;
+  right: 5vw;;
+  bottom: 18vh;
+  max-width: 150px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 5%;
+  padding: 20px;
+}
+.visible {
+  display: block;
+}
+
 
 /* 'TOUCH' */
 @media screen and (max-width: 768px){
