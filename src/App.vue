@@ -169,13 +169,14 @@ body {
 }
 .mail-message {
   display: none;
-  position: absolute;
+  position: fixed;
   right: 5vw;;
   bottom: 18vh;
   max-width: 150px;
   background: rgba(0,0,0,0.5);
   border-radius: 5%;
   padding: 20px;
+  z-index: 99;
 }
 .visible {
   display: block;
@@ -196,7 +197,20 @@ body {
   .lead {
     font-size: 1.4rem;
     line-height: 1.5rem;
-    width: 100%;
+    width: 60%;
+    margin-right: 0;
+    margin-left: 0;
   }
+  .modal-open {
+    background-color: red;
+    z-index: 99;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
 }
 </style>

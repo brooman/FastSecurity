@@ -49,6 +49,9 @@ export default {
   padding-bottom: 20vh;
   width: 80%;
 }
+.lead {
+  width: 100%;
+}
 
 /* DESKTOP */ 
 @media screen and (min-width: 768px){
@@ -68,6 +71,9 @@ export default {
   }
   .container {
     margin-top: 0;
+  }
+  .lead {
+    width: 60%;
   }
 }
 </style>

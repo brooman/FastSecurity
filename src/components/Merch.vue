@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div>
     <h2 class="display-1">Merchandise</h2>
     <div class="merchbox">
       <div class="merchitem"><img 

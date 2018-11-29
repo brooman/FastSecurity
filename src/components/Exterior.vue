@@ -66,6 +66,9 @@ main {
 	align-items: center;
 	max-width: 70%;
 }
+.lead {
+	width: 100%;
+}
 
 img {
 	width: 80%;
