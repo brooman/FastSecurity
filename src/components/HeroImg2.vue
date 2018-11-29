@@ -34,7 +34,7 @@ export default {
 .hero {
   height: 100vh;
   width: 100vw;
-  background: url('../img/lightcycle_moving_cropped.png');
+  background: url('../img/mc_helmet_port.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
   filter: saturate(70%);
@@ -58,7 +58,7 @@ export default {
   .hero {
     height: 100vh;
     width: 100vw;
-    background: url('../img/lightcycle_moving.png');
+    background: url('../img/mc_helmet_land.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

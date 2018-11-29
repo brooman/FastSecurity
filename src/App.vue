@@ -8,8 +8,9 @@
     <Navbar />
     <HeroImg />
     <HeroText />
-    <HeroImg2 />
+    <HeroImg3 />
     <Swiper /> 
+    <HeroImg2 />
     <Merch />
     <ElFooto />
   </div>
@@ -19,6 +20,7 @@
 import Navbar from './components/Navbar.vue'
 import HeroImg from './components/HeroImg.vue'
 import HeroImg2 from './components/HeroImg2.vue'
+import HeroImg3 from './components/HeroImg3.vue'
 import HeroText from './components/HeroText.vue'
 import Swiper from './components/Swiper.vue'
 import Merch from './components/Merch.vue'
@@ -30,9 +32,10 @@ export default {
 	components: {
 		Navbar,
 		HeroImg,
-		HeroImg2,
+		HeroImg3,
 		HeroText,
 		Swiper,
+		HeroImg2,
 		Merch,
 		ElFooto,
 		Modal,
@@ -76,7 +79,6 @@ setTimeout(() => {
 }
 
 * {
-  font-family: 'AG-Medium';
   color: #fff; 
   box-sizing: border-box;
 }
@@ -139,10 +141,10 @@ body {
 .contact-link {
   background: none;
   border: 3px solid #D51225;
-  border-radius: 12px;
+  border-radius: 35px;
   width: 215px;
   height: 50px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'AG-Regular';
   color: #fff;
   text-align: center;

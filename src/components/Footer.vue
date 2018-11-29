@@ -8,7 +8,11 @@
     <button
       class="contact-link" 
       href="#"
-    > KEEP ME INFORMED</button>
+    > KEEP ME INFORMED <img 
+      src="../img/icons/arrow.svg" 
+      alt="" 
+      style="transform: rotate(360deg); width: 10px; height: 10px;"
+    ></button>
   </main>
 </template>
 
@@ -76,7 +80,7 @@ img {
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		background: linear-gradient(black 10%, transparent), url('../img/lightcycle_moving.png');
+		background: linear-gradient(black 10%, transparent), url('../img/background_image_land.png');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
