@@ -58,7 +58,7 @@ export default {
   .hero {
     height: 100vh;
     width: 100vw;
-    background: url('../img/lightcycle_moving.png');
+    background: url('../img/background_image_land.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

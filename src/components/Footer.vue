@@ -80,7 +80,7 @@ img {
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		background: linear-gradient(black 10%, transparent), url('../img/lightcycle_moving.png');
+		background: linear-gradient(black 10%, transparent), url('../img/background_image_land.png');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
