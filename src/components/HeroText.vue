@@ -13,7 +13,11 @@
       <button
         class="contact-link" 
         href="#"
-        > KEEP ME INFORMED <img src="../img/icons/arrow.svg" alt="" style="transform: rotate(360deg); width: 10px;  height: 10px;">
+      > KEEP ME INFORMED <img 
+        src="../img/icons/arrow.svg" 
+        alt="" 
+        style="transform: rotate(360deg); width: 10px;  height: 10px;"
+      >
       </button>
     </div>
   </div>
