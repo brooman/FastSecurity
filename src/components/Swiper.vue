@@ -41,7 +41,7 @@ export default {
 			swiperOption: {
 				pagination: {
 					el: '.swiper-pagination',
-					type: 'fraction'
+					type: 'bullets',
 				},
 				navigation: {
 					nextEl: '.swiper-button-next',
