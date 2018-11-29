@@ -1,26 +1,38 @@
 <template>
   <div>
-    <h2 class="display-1">Merchandise</h2>
+    <h2 class="display-1">{{ getLanguage.merchandise }} </h2>
     <div class="merchbox">
       <div class="merchitem"><img 
         class="merchimg" 
         src="../img/shades.png"
-      ><h3 class="is-size-2">The <span class="highlight">Shades</span></h3><a href="#">Read more...</a></div>
+      ><h3 class="is-size-2">{{ getLanguage.merchThe }} <span class="highlight">{{ getLanguage.merchShades }}</span></h3><a href="#">{{ getLanguage.merchReadmore }}</a></div>
       <div class="merchitem"><img 
         class="merchimg" 
         src="../img/helmet.png"
-      ><h3 class="is-size-2">The <span class="highlight">Helmet</span></h3><a href="#">Read more...</a></div>
+      ><h3 class="is-size-2">{{ getLanguage.merchThe }} <span class="highlight">{{ getLanguage.merchHelmet }}</span></h3><a href="#">{{ getLanguage.merchReadmore }}</a></div>
       <div class="merchitem"><img 
         class="merchimg watch" 
         src="../img/black_watch.png"
-      ><h3 class="is-size-2">The <span class="highlight">Watch</span></h3><a href="#">Read more...</a></div>
+      ><h3 class="is-size-2">{{ getLanguage.merchThe }} <span class="highlight">{{ getLanguage.merchWatch }}</span></h3><a href="#">{{ getLanguage.merchReadmore }}</a></div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
 
+	name: 'Merch',
+	data: function() {
+		return {
+			
+		}
+	},
+	computed: {
+		...mapGetters([
+			'getLanguage'
+		]),
+	},
 }
 </script>
 

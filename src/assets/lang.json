@@ -22,7 +22,13 @@
 		"modalTitle3": "Shipment info",
 		"modalSubtitle3": "Type in your details and we will send you a beautiful folder for free",
 		"modalFolderLink": "I want a folder sent to my adress",
-		"subscribe": "Subscribe"
+		"subscribe": "Subscribe",
+		"merchanside": "Merchanside",
+		"merchThe": "The",
+		"merchShades": "Shades",
+		"merchHelmet": "Helmet",
+		"merchWatch": "Watch",
+		"merchReadmore": "Read more..."
 
 	},
 	"sv": {
@@ -48,6 +54,12 @@
 		"modalTitle3": "Försändelse info",
 		"modalSubtitle3": "Skriv in dina uppgifter och vi skickar dig en vacker mapp gratis.",
 		"modalFolderLink": "Jag vill ha en mapp skickad till min adress",
-		"subscribe": "Prenumerera"
+		"subscribe": "Prenumerera",
+		"merchanside": "Merchanside",
+		"merchThe": "",
+		"merchShades": "Solglasögon",
+		"merchHelmet": "Hjälm",
+		"merchWatch": "Klockan",
+		"merchReadmore": "Läs mer"
 	}
 }
