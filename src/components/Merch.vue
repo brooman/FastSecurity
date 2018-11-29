@@ -2,21 +2,22 @@
   <div>
     <h2 class="display-1">{{ getLanguage.merchandise }} </h2>
     <div class="merchbox">
-      <div class="merchitem"><img 
-        class="merchimg" 
-        src="../img/shades.png"
-      ><h3 class="is-size-2">{{ getLanguage.merchThe }} <span class="highlight">{{ getLanguage.merchShades }}</span></h3><a href="#">{{ getLanguage.merchReadmore }}</a></div>
-      <div class="merchitem"><img 
-        class="merchimg" 
+      <div class="merchitem">
+        <div class="merchimg"><img 
+          class="" 
+          src="../img/shades.png"
+      ></div><h3 class="is-size-2">{{ getLanguage.merchThe }} <span class="highlight">{{ getLanguage.merchShades }}</span></h3><a href="#">{{ getLanguage.merchReadmore }}</a></div>
+      <div class="merchitem"><div class="merchimg"><img 
+
         src="../img/helmet.png"
-      ><h3 class="is-size-2">{{ getLanguage.merchThe }} <span class="highlight">{{ getLanguage.merchHelmet }}</span></h3><a href="#">{{ getLanguage.merchReadmore }}</a></div>
-      <div class="merchitem"><img 
+      ></div><h3 class="is-size-2">{{ getLanguage.merchThe }} <span class="highlight">{{ getLanguage.merchHelmet }}</span></h3><a href="#">{{ getLanguage.merchReadmore }}</a></div>
+      <div class="merchitem"><div class="merchimg"><img 
         class="merchimg watch" 
         src="../img/black_watch.png"
-      ><h3 class="is-size-2">{{ getLanguage.merchThe }} <span class="highlight">{{ getLanguage.merchWatch }}</span></h3><a href="#">{{ getLanguage.merchReadmore }}</a></div>
+      ></div><h3 class="is-size-2">{{ getLanguage.merchThe }} <span class="highlight">{{ getLanguage.merchWatch }}</span></h3><a href="#">{{ getLanguage.merchReadmore }}</a> 
+      </div>
     </div>
-  </div>
-</template>
+</div></template>
 
 <script>
 import { mapGetters } from 'vuex'
@@ -58,14 +59,26 @@ export default {
     justify-content: center;
     flex-direction: column;
   }
-
   .highlight {
     color: #d51225;
   }
-
   .merchimg {
-    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
     border-radius: 100%;
+    background-color: #fff;
+  }
+  .merchimg > img {
+    max-height: 256px;
+    max-width: 256px;
+    object-fit: scale-down;
+  }
+
+  a, a:visited, a:active {
+    color: white;
   }
 
   @media screen and (max-width: 768px){
