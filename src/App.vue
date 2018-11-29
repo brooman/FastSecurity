@@ -52,7 +52,7 @@ setTimeout(() => {
   mailMessage.textContent = 'Hey! Don\'t forget to leave your email down below.'
   mailMessage.classList.add('visible')
 
-}, 2000)
+}, 20000)
 setTimeout(() => {
   mailMessage.classList.remove('visible')
 
