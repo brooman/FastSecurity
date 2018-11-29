@@ -15,21 +15,21 @@
 import { mapGetters } from 'vuex'
 export default {
 
-	name: 'Interior',
-	data: function() {
-		return {
+  name: 'Interior',
+  data: function() {
+    return {
 			
-		}
-	},
-	computed: {
-		...mapGetters([
-			'getLanguage'
-		]),
-	},
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'getLanguage'
+    ]),
+  },
 	
-	methods: {
+  methods: {
 
-	}
+  }
 }
 </script>
 

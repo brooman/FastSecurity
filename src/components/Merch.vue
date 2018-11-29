@@ -23,17 +23,17 @@
 import { mapGetters } from 'vuex'
 export default {
 
-	name: 'Merch',
-	data: function() {
-		return {
+  name: 'Merch',
+  data: function() {
+    return {
 			
-		}
-	},
-	computed: {
-		...mapGetters([
-			'getLanguage'
-		]),
-	},
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'getLanguage'
+    ]),
+  },
 }
 </script>
 

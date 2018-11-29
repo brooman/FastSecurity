@@ -20,21 +20,21 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-	name: 'Footer',
-	data: function() {
-		return {
-		}
-	},
-	computed: {
-		...mapGetters([
-			'getLanguage'
-		]),
-	},
-	methods: {
-		openModal () {
-			this.$parent.toggleModal()
-		}
-	}
+  name: 'Footer',
+  data: function() {
+    return {
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'getLanguage'
+    ]),
+  },
+  methods: {
+    openModal () {
+      this.$parent.toggleModal()
+    }
+  }
 }
 </script>
 

@@ -27,22 +27,22 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-	name: 'HeroText',
-	data: function() {
-		return {
+  name: 'HeroText',
+  data: function() {
+    return {
 			
-		}
-	},
-	computed: {
-		...mapGetters([
-			'getLanguage'
-		]),
-	},
-	methods: {
-		openModal () {
-			this.$parent.toggleModal()
-		}
-	}
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'getLanguage'
+    ]),
+  },
+  methods: {
+    openModal () {
+      this.$parent.toggleModal()
+    }
+  }
 }
 </script>
 

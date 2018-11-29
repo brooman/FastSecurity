@@ -40,35 +40,35 @@ import language from '../assets/lang.json'
 import { mapMutations } from 'vuex'
 import { mapGetters } from 'vuex'
 export default {
-	data: function() {
-		return {
-			language: language,
-			sv: language.sv,
-			en: language.en,
-		}
-	},
-	computed: {
-		...mapGetters([
-			'getLanguage'
-		]),
-	},
-	methods: {
-		...mapMutations([
-			'CHANGE_LANGUAGE'
-		]),
-		changeLanguage: function(pickedLanguage, name) {
-			this.CHANGE_LANGUAGE(pickedLanguage)
+  data: function() {
+    return {
+      language: language,
+      sv: language.sv,
+      en: language.en,
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'getLanguage'
+    ]),
+  },
+  methods: {
+    ...mapMutations([
+      'CHANGE_LANGUAGE'
+    ]),
+    changeLanguage: function(pickedLanguage, name) {
+      this.CHANGE_LANGUAGE(pickedLanguage)
 
-			//Remove active classes
-			this.$el.querySelectorAll('.active').forEach(btn => {
-				btn.classList.remove('active')
-			})
+      //Remove active classes
+      this.$el.querySelectorAll('.active').forEach(btn => {
+        btn.classList.remove('active')
+      })
 
-			//Add active to selected element
-			this.$el.querySelector(`span[value=${name}]`).classList.add('active')
+      //Add active to selected element
+      this.$el.querySelector(`span[value=${name}]`).classList.add('active')
 
-		}
-	}
+    }
+  }
 }
 </script>
 

@@ -28,33 +28,33 @@ import ElFooto from './components/Footer.vue'
 import Modal from './components/Modal.vue'
 
 export default {
-	name: 'App',
-	components: {
-		Navbar,
-		HeroImg,
-		HeroImg3,
-		HeroText,
-		Swiper,
-		HeroImg2,
-		Merch,
-		ElFooto,
-		Modal,
-	},
-	methods: {
-		toggleModal() {
-			this.$refs.modal.toggle()
-		}
-	}
+  name: 'App',
+  components: {
+    Navbar,
+    HeroImg,
+    HeroImg3,
+    HeroText,
+    Swiper,
+    HeroImg2,
+    Merch,
+    ElFooto,
+    Modal,
+  },
+  methods: {
+    toggleModal() {
+      this.$refs.modal.toggle()
+    }
+  }
 }
 
 const mailMessage = document.querySelector('.mail-message')
 setTimeout(() => {
-	mailMessage.textContent = 'Hey! Don\'t forget to leave your email down below.'
-	mailMessage.classList.add('visible')
+  mailMessage.textContent = 'Hey! Don\'t forget to leave your email down below.'
+  mailMessage.classList.add('visible')
 
 }, 20000)
 setTimeout(() => {
-	mailMessage.classList.remove('visible')
+  mailMessage.classList.remove('visible')
 
 }, 40000)
 </script>

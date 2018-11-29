@@ -142,32 +142,32 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-	data: function() {
-		return {
-			active: false,
-			activePage: 1,
-			previousPage: 1,
-		};
-	},
-	computed: {
-		...mapGetters([
-			'getLanguage'
-		]),
-	},
-	methods: {
-		toggle () {
-			this.active = !this.active
-		},
+  data: function() {
+    return {
+      active: false,
+      activePage: 1,
+      previousPage: 1,
+    };
+  },
+  computed: {
+    ...mapGetters([
+      'getLanguage'
+    ]),
+  },
+  methods: {
+    toggle () {
+      this.active = !this.active
+    },
     
-		setActive (id) {
-			this.previousPage = this.activePage
-			this.activePage = id
-		},
+    setActive (id) {
+      this.previousPage = this.activePage
+      this.activePage = id
+    },
     
-		previous () {
-			this.activePage = this.previousPage
-		}
-	}
+    previous () {
+      this.activePage = this.previousPage
+    }
+  }
 }
 </script>
 

@@ -17,8 +17,8 @@ Vue.use(VueAwesomeSwiper)
 Vue.use(VueProgressiveImage)
 
 new Vue({
-	store,
-	render: h => h(App),
+  store,
+  render: h => h(App),
 }).$mount('#app')
 
  

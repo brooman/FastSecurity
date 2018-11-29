@@ -34,29 +34,29 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-	name: 'ChooseColor',
-	data: function() {
-		return {
-			circles: [
-				{ class: 'white', image: 'img/whiteorange2.png'},
-				{ class: 'red', image: 'img/red2.png'},
-				{ class: 'black', image: 'img/blackred2.png' },
-				{ class: 'saab', image: 'img/blueorange2.png' },
-			],
-			selected: '',
-			image: 'img/blackred2.png',
-		}
-	},
-	computed: {
-		...mapGetters([
-			'getLanguage'
-		]),
-	},
-	methods: {
-		selectedImage: function(circle) {
-			this.image = circle.image
-		}
-	},
+  name: 'ChooseColor',
+  data: function() {
+    return {
+      circles: [
+        { class: 'white', image: 'img/whiteorange2.png'},
+        { class: 'red', image: 'img/red2.png'},
+        { class: 'black', image: 'img/blackred2.png' },
+        { class: 'saab', image: 'img/blueorange2.png' },
+      ],
+      selected: '',
+      image: 'img/blackred2.png',
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'getLanguage'
+    ]),
+  },
+  methods: {
+    selectedImage: function(circle) {
+      this.image = circle.image
+    }
+  },
 }
 </script>
 

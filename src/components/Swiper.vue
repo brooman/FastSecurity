@@ -26,34 +26,34 @@ import ChooseColor from './ChooseColor.vue'
 import Interior from './Interior.vue'
 import Exterior from './Exterior.vue'
 export default {
-	name: 'Carrousel',
-	components: {
-		ChooseColor,
-		Interior,
-		Exterior,
-	},
-	data() {
-		return {
-			swiperOption: {
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-				},
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
-			}
-		}
-	},
-	computed: {
-		swiper() {
-			return this.$refs.mySwiper.swiper
-		}
-	},
-	mounted() {
-		this.swiper.slideTo(0, 1000, false)
-	},
+  name: 'Carrousel',
+  components: {
+    ChooseColor,
+    Interior,
+    Exterior,
+  },
+  data() {
+    return {
+      swiperOption: {
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      }
+    }
+  },
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.swiper
+    }
+  },
+  mounted() {
+    this.swiper.slideTo(0, 1000, false)
+  },
 }
 </script>
 

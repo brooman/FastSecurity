@@ -17,17 +17,17 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-	name: 'HeroImg3',
-	data: function() {
-		return {
+  name: 'HeroImg3',
+  data: function() {
+    return {
 			
-		}
-	},
-	computed: {
-		...mapGetters([
-			'getLanguage'
-		]),
-	},
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'getLanguage'
+    ]),
+  },
 }
 </script>
 
