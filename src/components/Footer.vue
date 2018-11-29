@@ -8,7 +8,8 @@
     <button
       class="contact-link" 
       href="#"
-    > KEEP ME INFORMED <img 
+      @click="openModal()"
+    > {{ getLanguage.keepMeInformed.toUpperCase() }}<img 
       src="../img/icons/arrow.svg" 
       alt="" 
       style="transform: rotate(360deg); width: 10px; height: 10px;"
@@ -30,7 +31,9 @@ export default {
 		]),
 	},
 	methods: {
-
+		openModal () {
+			this.$parent.toggleModal()
+		}
 	}
 }
 </script>
@@ -68,10 +71,6 @@ img {
 	width: 80%;
 	max-height: 150px;
 	transform:rotateY(180deg);
-}
-
-.highlight {
-	color: cyan;
 }
 
 @media screen and (min-width: 768px) {

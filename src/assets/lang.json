@@ -28,7 +28,8 @@
 		"merchShades": "Shades",
 		"merchHelmet": "Helmet",
 		"merchWatch": "Watch",
-		"merchReadmore": "Read more..."
+		"merchReadmore": "Read more...",
+		"keepMeInformed": "Keep me informed"
 
 	},
 	"sv": {
@@ -45,7 +46,7 @@
 		"interiorTitle": "Insidan",
 		"interiorP": "Fast Security-interiören är vacker och smart designad. Allt för en unik körupplevelse med total kontroll i dina händer",
 		"chooseColorTitle": "Välj färg",
-		"chooseColorH3": "Snabb säkerhet finns i fyra färger. Varför inte köra din personliga?",
+		"chooseColorH3": "Fast Security 1.0 finns i fyra färger. Varför inte köra din personliga?",
 		"footerTitle": "Bli en del utav framtiden",
 		"modalTitle1": "Gör dig redo för framtiden",
 		"modalSubtitle1": "Anmäl dig för att hålla dig informerad och få de senaste nyheterna.",
@@ -58,8 +59,9 @@
 		"merchanside": "Merchanside",
 		"merchThe": "",
 		"merchShades": "Solglasögon",
-		"merchHelmet": "Hjälm",
+		"merchHelmet": "Hjälmen",
 		"merchWatch": "Klockan",
-		"merchReadmore": "Läs mer"
+		"merchReadmore": "Läs mer",
+		"keepMeInformed": "Håll mig uppdaterad"
 	}
 }
