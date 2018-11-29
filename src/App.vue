@@ -52,11 +52,15 @@ setTimeout(() => {
   mailMessage.textContent = 'Hey! Don\'t forget to leave your email down below.'
   mailMessage.classList.add('visible')
 
-}, 20000)
+}, 2000)
 setTimeout(() => {
   mailMessage.classList.remove('visible')
 
 }, 40000)
+
+mailMessage.addEventListener('click', () => {
+  mailMessage.classList.remove('visible')
+})
 </script>
 
 <style>
@@ -145,7 +149,6 @@ body {
   width: 215px;
   height: 50px;
   font-size: 1rem;
-  line-height: 45px;
   font-family: 'AG-Regular';
   color: #fff;
   text-align: center;
@@ -185,25 +188,34 @@ body {
 .visible {
   display: block;
 }
-
 .scroll-down {
   position: relative;
-  animation: jumpy 1s ease-in-out infinite;
+  animation: jumpy 6s ease-in-out infinite;
+	animation-direction: alternate;
+	animation-delay: 2s;
 }
-
 @keyframes jumpy {
   0% {
     bottom: 0px;
   }
-
+  10% {
+    bottom: 10px;
+  }
+	20% {
+		bottom: 0px;
+	}
+  30% {
+    bottom: 10px;
+  }
+	40% {
+		bottom: 0px;
+	}
   50% {
     bottom: 10px;
   }
-
   100% {
-    bottom: 0px;
+    bottom: 10px;
   }
-
 }
 
 /* 'TOUCH' */
