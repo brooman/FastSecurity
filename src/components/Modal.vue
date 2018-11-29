@@ -240,4 +240,13 @@ export default {
   .btn-input {
     width: 20%;
   }
+
+  @media screen and (max-width: 768px) {
+    .modal-content {
+      margin-bottom: 50%;
+      margin-top: 50%;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+  }
 </style>
