@@ -72,6 +72,7 @@ export default {
 	background-size: contain;
 	width: 60px;
 	height: 100px;
+	position: absolute;
 }
 
 .swiper-button-disabled {
@@ -79,9 +80,41 @@ export default {
 }
 .swiper-button-prev {
 	transform: rotate(90deg);
+	animation: shaky-left 1s ease-in-out infinite;
 }
 
 .swiper-button-next {
 	transform: rotate(-90deg);
+	animation: shaky-right 1s ease-in-out infinite;
+}
+
+
+@keyframes shaky-right {
+  0% {
+    right: 0px;
+  }
+
+  50% {
+    right: 10px;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
+
+
+@keyframes shaky-left {
+  0% {
+    left: 0px;
+  }
+
+  50% {
+    left: 10px;
+  }
+
+  100% {
+    left: 0px;
+  }
 }
 </style>
