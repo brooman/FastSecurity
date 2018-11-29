@@ -44,11 +44,12 @@ export default {
     line-height: 57px;
   }
   .display-1 {
-    margin-top: 5vh;
+    margin-top: 10vh;
   }
 
   .merchbox {
-    height: 100vh;
+    height: 60vh;
+    margin-bottom: 30vh;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -83,7 +84,9 @@ export default {
 
   @media screen and (max-width: 768px){
     .merchbox {
-      height: 300vh;
+      height: 200vh;
+      margin-bottom: 10vh;
+      justify-content: space-between;
       flex-direction: column;
       align-items: center;
     }
