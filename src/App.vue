@@ -186,6 +186,26 @@ body {
   display: block;
 }
 
+.scroll-down {
+  position: relative;
+  animation: jumpy 1s ease-in-out infinite;
+}
+
+@keyframes jumpy {
+  0% {
+    bottom: 0px;
+  }
+
+  50% {
+    bottom: 10px;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+
+}
+
 /* 'TOUCH' */
 @media screen and (max-width: 768px){
   .display-1 {

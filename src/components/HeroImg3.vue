@@ -10,6 +10,7 @@
         </p>
       </div>
     </div>
+    <div class="scroll-down"><img src="../img/icons/red_triangle.svg"></div>
   </section>
 </template>
 
