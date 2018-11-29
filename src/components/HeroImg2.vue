@@ -5,7 +5,7 @@
         <h1 class="display-1">
           {{ getLanguage.subHeroTitleH1 }}
         </h1>
-        <p class="lead">
+        <p class="lead lead-center">
           {{ getLanguage.subHeroTitleH2 }}
         </p>
       </div>
@@ -73,8 +73,9 @@ export default {
   .container {
     margin-top: 0;
   }
-  .lead {
+  .lead-center {
     width: 60%;
+    text-align: center;
   }
 }
 </style>

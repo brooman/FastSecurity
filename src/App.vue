@@ -180,7 +180,7 @@ body {
   background: rgba(0,0,0,0.5);
   border-radius: 5%;
   padding: 20px;
-  z-index: 99;
+  z-index: 10;
 }
 .visible {
   display: block;

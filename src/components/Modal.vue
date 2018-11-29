@@ -218,7 +218,7 @@ export default {
     right: -1rem;
     top: -1rem;
     background-color: red;
-    z-index: 99;
+    z-index: 999;
     position: relative;
     height: 3rem;
     width: 3rem;
