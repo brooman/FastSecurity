@@ -145,6 +145,7 @@ body {
   width: 215px;
   height: 50px;
   font-size: 1rem;
+  line-height: 45px;
   font-family: 'AG-Regular';
   color: #fff;
   text-align: center;
