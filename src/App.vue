@@ -224,5 +224,19 @@ body {
     margin-right: 0;
     margin-left: 0;
   }
+  .modal-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    z-index: 99;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
 }
 </style>
