@@ -11,10 +11,6 @@
     <swiper-slide class="slide"> <Exterior /> </swiper-slide>
     <!-- Optional controls -->
     <div 
-      slot="pagination" 
-      class="swiper-pagination"
-    />
-    <div 
       slot="button-prev" 
       class="swiper-button-prev"
     />
@@ -68,5 +64,24 @@ export default {
 }
 .slide {
 	color: #000;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	top: calc(100vh - 74px);
+	background: url('../img/icons/red_triangle.svg') no-repeat;
+	background-size: contain;
+	width: 60px;
+	height: 100px;
+}
+
+.swiper-button-disabled {
+	display: none;
+}
+.swiper-button-prev {
+	transform: rotate(90deg);
+}
+
+.swiper-button-next {
+	transform: rotate(-90deg);
 }
 </style>

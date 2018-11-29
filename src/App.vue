@@ -183,7 +183,6 @@ body {
   display: block;
 }
 
-
 /* 'TOUCH' */
 @media screen and (max-width: 768px){
   .display-1 {
