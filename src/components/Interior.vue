@@ -51,6 +51,9 @@ main {
 .side {
 	display: none;
 }
+.lead {
+	width: 100%;
+}
 
 .content-container {
 	display: flex;

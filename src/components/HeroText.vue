@@ -50,10 +50,8 @@ export default {
     line-height: 57px;
   }
   .display-1 {
-    width: 60%;
     text-align: left;
     padding-bottom: 3vh;
-    
   }
   .color-line {
     align-self: flex-start;
@@ -63,5 +61,17 @@ export default {
   .lead {
     padding-bottom: 3vh;
     padding-top: 3vh;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .display-1 {
+      text-align: left;
+      padding-bottom: 3vh;
+      width: 60%;
+    }
+    .lead {
+      width: 60%;
+    }
   }
 </style>

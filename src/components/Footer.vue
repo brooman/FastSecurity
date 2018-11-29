@@ -8,7 +8,7 @@
     <button
       class="contact-link" 
       href="#"
-    > KEEP ME INFORMED ></button>
+    > KEEP ME INFORMED</button>
   </main>
 </template>
 
@@ -38,7 +38,7 @@ main {
 	align-items: center;
 	justify-content: flex-start;
 	flex-direction: column;
-	background: linear-gradient(black 10%, transparent), url('../img/lightcycle_moving_cropped_2.png');
+	background: linear-gradient(black -15%, transparent), url('../img/city_portrait.jpg');
 	background-position: bottom;
 	background-size:cover;
 	background-repeat: no-repeat;
