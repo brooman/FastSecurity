@@ -43,7 +43,7 @@ export default {
         { class: 'black', image: 'img/blackred2.png' },
         { class: 'saab', image: 'img/blueorange2.png' },
       ],
-      selected: '',
+			selected: '',
       image: 'img/blackred2.png',
     }
   },

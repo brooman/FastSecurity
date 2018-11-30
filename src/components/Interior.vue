@@ -42,7 +42,7 @@ main {
 	height: 100vh;
 	width: 100vw;
 	color: #fff;
-	background: linear-gradient(black 40%, transparent), url('../img/UI.jpg');
+	background: linear-gradient(black 40%, transparent), url('../img/new_ui.jpg');
 	background-position: bottom;
 	background-size: 170%;
 	background-repeat: no-repeat;
@@ -82,7 +82,7 @@ img {
 	main { background: none; }
 	.side {
 		display: block;
-		background: url('../img/UI.jpg');
+		background: url('../img/new_ui.jpg');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
