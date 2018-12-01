@@ -1,10 +1,10 @@
-# FastSecurity [WIP]
+# FastSecurity
 
 A landing page for a futuristic motorcycle.
 
 This is a project by [YRGO](https://github.com/yrgo) students of Web Development, Digital Designer and Computer Graphics.
 
-Live version: [Still WIP](https://laykith.github.io/FastSecurity)
+Live version: [GH-Pages](https://laykith.github.io/FastSecurity)
 
 ## Installation
 
