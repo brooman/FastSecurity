@@ -38,10 +38,13 @@
     "extends": [
       "plugin:vue/recommended",
       "eslint:recommended"
-		],
-		"rules": {
-			"indent": ["error", 2]
-		},
+    ],
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
